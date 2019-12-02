@@ -1,0 +1,3200 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="icon" href="img/Unika-logo/mipmap-hdpi/ic_launcher.png" type="image/gif" sizes="16x16">
+        <meta charset="utf-8">
+        <title>MAP UNIKA 2019</title>
+    </head>
+        <style type="text/css">
+        #d1{
+            position: relative;
+            width: 1130px;
+            height: 200px; 
+            top: 10px;
+            left: 50px; 
+        }
+        #canvas1{
+              position: absolute;
+              width: 20px;
+              height: 20px;
+              left: 5px;
+              transform: rotate(+90deg);
+              background: url(img/anakpanah.png);
+              background-size: 100%;
+            }
+        #canvas2{
+                position: absolute;
+            	width: 1130px;
+            	height: 200px;    
+            }
+        #myCanvas{
+            position: relative;
+            width: 1130px;
+            height: 200px;
+            border: 1px solid;
+        }
+        #luarjustinus{
+            position: absolute;
+            width: 60px;
+            height: 81px;
+            left: 25px;
+            top: 10px;
+            background-color: green;
+            opacity: 0.50;
+        }
+        #Tamandpnta{
+            position: absolute;
+            width: 80px;
+            height: 8px;
+            left: 285px;
+            top: 102px;
+            background-color: green;
+            opacity: 0.50;
+        }
+        #pagerdpnlapbasket{
+            position: absolute;
+            width: 30px;
+            height: 6px;
+            left: 240px;
+            top: 80px;
+            background-color: black;
+            opacity: 0.50;
+        }
+        #pagerdpnta{
+            position: absolute;
+            width: 25px;
+            height: 6px;
+            left: 285px;
+            top: 80px;
+            background-color: black;
+            opacity: 0.50;
+        }
+        #pagerdpnta2{
+            position: absolute;
+            width: 35px;
+            height: 6px;
+            left: 330px;
+            top: 80px;
+            background-color: black;
+            opacity: 0.50;
+        }
+        #jalanrumput{
+            position: absolute;
+            width: 1130px;
+            height: 30px;
+            left: 0px;
+            top: 145px;
+            background-color: green;
+            opacity: 0.50;
+        }
+        #rumput{
+            position: absolute;
+            width: 50px;
+            height: 30px;
+            left: 390px;
+            top: 10px;
+            background-color: green;
+            opacity: 0.50;
+        }
+        #rumput2{
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            left: 440px;
+            top: 20px;
+            background-color: green;
+            opacity: 0.50;
+        }
+        #rumput3{
+            position: absolute;
+            width: 25px;
+            height: 15px;
+            left: 484px;
+            top: 10px;
+            background-color: green;
+            opacity: 0.50;
+        }
+        #rumput4{
+            position: absolute;
+            width: 130px;
+            height: 10px;
+            left: 500px;
+            top: 10px;
+            background-color: green;
+            opacity: 0.50;
+        }
+        #rumput5{
+            position: absolute;
+            width: 110px;
+            height: 20px;
+            left: 630px;
+            top: 10px;
+            background-color: green;
+            opacity: 0.50;
+        }
+        #rumput6{
+            position: absolute;
+            width: 85px;
+            height: 5px;
+            left: 680px;
+            top: 30px;
+            background-color: green;
+            opacity: 0.50;
+        }
+        #rumput7{
+            position: absolute;
+            width: 57px;
+            height: 35px;
+            left: 765px;
+            top: 27px;
+            background-color: green;
+            opacity: 0.50;
+        }
+        #jalansamping{
+            position: absolute;
+            width: 5px;
+            height: 135px;
+            left: 0px;
+            top: 10px;
+            background-color: green;
+            opacity: 0.50;
+        }
+        #jalanatas{
+            position: absolute;
+            width: 1130px;
+            height: 10px;
+            left: 0px;
+            top: 0px;
+            background-color: black;
+            opacity: 0.40;
+        }
+        #jalanluar{
+            position: absolute;
+            width: 1130px;
+            height: 27px;
+            left: 0px;
+            top: 173px;
+            background-color: black;
+            opacity: 0.40;
+        }
+        #hc{
+            position: absolute;
+            width: 42px;
+            height: 60px;
+            left:720px ;
+            top:40px ;
+        }
+        #hc2{
+            position: absolute;
+            width: 62px;
+            height: 20px;
+            left:760px ;
+            top:65px ;
+        } 
+        #sporthall{
+            position: absolute;
+            width: 67px;
+            height: 55px;
+            left:830px ;
+            top:29px ;
+        } 
+        #jst{
+            position: absolute;
+            width: 50px;
+            height: 65px;
+            left:30px ;
+            top:20px ;
+        }
+        #albert{
+            position: absolute;
+            width: 60px;
+            height: 40px;
+            left:130px ;
+            top:40px ;
+        }
+        #albert2{
+            position: absolute;
+            width: 30px;
+            height: 25px;
+            left:192px ;
+            top:48px ;
+        }
+        #ta{
+            position: absolute;
+            width: 80px;
+            height: 45px;
+            left:285px ;
+            top:25px ;
+        }
+        #ta2{
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            left:265px ;
+            top:31px ;
+        }
+        #ta3{
+            position: absolute;
+            width: 27px;
+            height: 20px;
+            left:365px ;
+            top:31px ;
+        }
+        #mch{
+            position: absolute;
+            width: 70px;
+            height: 30px;
+            left:395px ;
+            top:46px ;
+        }
+        #bmsi{
+            position: absolute;
+            width: 29px;
+            height: 15px;
+            left: 421px;
+            top: 21px;
+        }
+        #anton{
+            position: absolute;
+            width: 30px;
+            height: 40px;
+            left:560px ;
+            top:40px ;
+        }
+        #anton2{
+            position: absolute;
+            width: 30px;
+            height: 35px;
+            left:481px ;
+            top:41px ;
+        }
+        #anton3{
+            position: absolute;
+            width: 40px;
+            height: 20px;
+            left:520px ;
+            top:40px ;
+        }
+        #anton4{
+            position: absolute;
+            width: 50px;
+            height: 20px;
+            left:590px ;
+            top:61px ;
+        }
+        #satpam{
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            left:110px ;
+            top:16px ;
+            background-color: #8000FF;
+            opacity: 0.30;
+        }
+        #atm{
+            position: absolute;
+            width: 5px;
+            height: 29px;
+            left:110px ;
+            top:30px ;
+            background-color: #8000FF;
+            opacity: 0.30;
+        }
+        #h1{
+            text-align: center;
+        }
+        #p2{
+            text-align: justify;
+            font-style: Arial;
+            font-size: 12px;
+        }
+        .footer{
+        bottom: 0;
+        font-size: 10px;
+        text-align: center;
+        }
+
+        @keyframes driPintuMasukkeHc{
+            0%{left: 5px ;top: 5px;transform: rotate(+90deg);}
+            30%{left: 5px;top: 109px;transform: rotate(+90deg);}
+            50%{left: 5px;top: 109px;transform: rotate(0deg);}
+            70%{left: 652px;top: 109px;transform: rotate(0deg);}
+            80%{left: 652px;top: 109px;transform: rotate(-90deg);}
+            90%{left: 652px;top: 60px;transform: rotate(-90deg);}
+            100%{left: 652px;top: 60px;transform: rotate(0deg);}
+        }
+        @keyframes driPintuMasukkesporthall{
+            0%{left: 5px ;top: 5px;transform: rotate(+90deg);}
+            30%{left: 5px;top: 109px;transform: rotate(+90deg);}
+            60%{left: 5px;top: 110px;transform: rotate(0deg);}
+            70%{left: 930px;top: 110px;transform: rotate(0deg);}
+            80%{left: 930px;top:110px;transform: rotate(-90deg);}
+            90%{left: 900px;top:90px;transform: rotate(-140deg);}
+            100%{left: 800px;top:90px;transform: rotate(-180deg);}
+        }
+        @keyframes driPintuMasukkejustinusDpn{
+            0%{left: 5px ;top: 5px;transform: rotate(+90deg);}
+            30%{left: 5px;top: 109px;transform: rotate(+90deg);}
+            50%{left: 5px;top: 109px;transform: rotate(0deg);}
+            70%{left: 45px;top: 109px;transform: rotate(0deg);}
+            80%{left: 45px;top: 109px;transform: rotate(-90deg);}
+            100%{left: 45px;top: 85px;transform: rotate(-90deg);}
+        }
+        @keyframes drPintuMasukkeAlbertus{
+            0%{left: 5px ;top: 5px;transform: rotate(+90deg);}
+            20%{left: 5px;top: 109px;transform: rotate(+90deg);}
+            30%{left: 5px;top: 109px;transform: rotate(0deg);}
+            50%{left: 90px;top: 109px;transform: rotate(0deg);}
+            60%{left: 90px;top: 109px;transform: rotate(-90deg);}
+            70%{left: 90px;top: 85px;transform: rotate(-90deg);}
+            80%{left: 90px;top: 85px;transform: rotate(0deg);}
+            90%{left: 185px;top: 85px;transform: rotate(0deg);}
+            100%{left: 185px;top: 85px;transform: rotate(-90deg);}
+        }
+        @keyframes drPintuMasukkeTa{
+            0%{left: 5px ;top: 5px;transform: rotate(+90deg);}
+            20%{left: 5px;top: 109px;transform: rotate(+90deg);}
+            30%{left: 5px;top: 109px;transform: rotate(0deg);}
+            40%{left: 270px;top: 109px;transform: rotate(0deg);}
+            50%{left: 270px;top: 109px;transform: rotate(-90deg);}
+            60%{left: 270px;top: 85px;transform: rotate(-90deg);}
+            70%{left: 270px;top: 85px;transform: rotate(0deg);}
+            80%{left: 310px;top: 85px;transform: rotate(0deg);}
+            90%{left: 310px;top: 85px;transform: rotate(-90deg);}
+            100%{left: 310px;top: 70px;transform: rotate(-90deg);}
+        }
+        @keyframes drPintuMasukkeMichael{
+            0%{left: 5px ;top: 5px;transform: rotate(+90deg);}
+            30%{left: 5px;top: 109px;transform: rotate(+90deg);}
+            50%{left: 5px;top: 109px;transform: rotate(0deg);}
+            70%{left: 420px;top: 109px;transform: rotate(0deg);}
+            80%{left: 420px;top: 109px;transform: rotate(-90deg);}
+            100%{left: 420px;top: 74px;transform: rotate(-90deg);}
+        }
+        @keyframes drPintuMasukkeAntonius{
+            0%{left: 5px ;top: 5px;transform: rotate(+90deg);}
+            30%{left: 5px;top: 109px;transform: rotate(+90deg);}
+            50%{left: 5px;top: 109px;transform: rotate(0deg);}
+            70%{left: 560px;top: 109px;transform: rotate(0deg);}
+            80%{left: 560px;top: 109px;transform: rotate(-90deg);}
+            100%{left: 560px;top: 78px;transform: rotate(-90deg);}
+        }
+        @keyframes drPintuMasukkeBMSI{
+            0%{left: 5px ;top: 5px;transform: rotate(+90deg);}
+            20%{left: 5px;top: 109px;transform: rotate(+90deg);}
+            30%{left: 5px;top: 109px;transform: rotate(0deg);}
+            40%{left: 520px;top: 109px;transform: rotate(0deg);}
+            50%{left: 520px;top: 109px;transform: rotate(-90deg);}
+            60%{left: 520px;top: 75px;transform: rotate(-90deg);}
+            70%{left: 520px;top: 75px;transform: rotate(-180deg);}
+            80%{left: 465px;top: 75px;transform: rotate(-180deg);}
+            90%{left: 465px;top: 75px;transform: rotate(-90deg);}
+            100%{left: 465px;top: 35px;transform: rotate(-90deg);}
+        }
+
+
+        @keyframes drGdJustinkeHc{
+            0%{left: 90px;top: 30px;transform: rotate(+90deg);}
+            30%{left: 90px;top: 109px;transform: rotate(+90deg);}
+            50%{left: 90px;top: 109px;transform: rotate(0deg);}
+            70%{left: 652px;top: 109px;transform: rotate(0deg);}
+            80%{left: 652px;top: 109px;transform: rotate(-90deg);}
+            90%{left: 652px;top: 60px;transform: rotate(-90deg);}
+            100%{left: 652px;top: 60px;transform: rotate(0deg);}
+        }
+        @keyframes drGdJustinkesporthall{
+            0%{left: 20px;top: 109px;transform: rotate(0deg);}
+            30%{left: 930px;top: 110px;transform: rotate(0deg);}
+            50%{left: 930px;top:110px;transform: rotate(-90deg);}
+            80%{left: 900px;top:90px;transform: rotate(-140deg);}
+            100%{left: 800px;top:90px;transform: rotate(-180deg);}
+        }
+        @keyframes drGdJustinkeAlbertus{
+            0%{left: 90px;top: 30px;transform: rotate(+90deg);}
+            30%{left: 90px;top: 85px;transform: rotate(+90deg);}
+            50%{left: 90px;top: 85px;transform: rotate(0deg);}
+            80%{left: 185px;top: 85px;transform: rotate(0deg);}
+            100%{left: 185px;top: 85px;transform: rotate(-90deg);}
+        }
+        @keyframes drGdJustinkeTa{
+            0%{left: 90px;top: 30px;transform: rotate(+90deg);}
+            20%{left: 90px;top: 109px;transform: rotate(+90deg);}
+            30%{left: 90px;top: 109px;transform: rotate(0deg);}
+            40%{left: 270px;top: 109px;transform: rotate(0deg);}
+            50%{left: 270px;top: 109px;transform: rotate(-90deg);}
+            60%{left: 270px;top: 85px;transform: rotate(-90deg);}
+            70%{left: 270px;top: 85px;transform: rotate(0deg);}
+            80%{left: 310px;top: 85px;transform: rotate(0deg);}
+            90%{left: 310px;top: 85px;transform: rotate(-90deg);}
+            100%{left: 310px;top: 70px;transform: rotate(-90deg);}
+        }
+        @keyframes drGdJustinuskeMichael{
+            0%{left: 90px;top: 30px;transform: rotate(+90deg);}
+            20%{left: 90px;top: 109px;transform: rotate(+90deg);}
+            40%{left: 90px;top: 109px;transform: rotate(0deg);}
+            60%{left: 420px;top: 109px;transform: rotate(0deg);}
+            80%{left: 420px;top: 109px;transform: rotate(-90deg);}
+            100%{left: 420px;top: 74px;transform: rotate(-90deg);}
+        }
+        @keyframes drGdJustinuskeAntonius{
+            0%{left: 90px;top: 30px;transform: rotate(+90deg);}
+            20%{left: 90px;top: 109px;transform: rotate(+90deg);}
+            40%{left: 90px;top: 109px;transform: rotate(0deg);}
+            60%{left: 560px;top: 109px;transform: rotate(0deg);}
+            80%{left: 560px;top: 109px;transform: rotate(-90deg);}
+            100%{left: 560px;top: 78px;transform: rotate(-90deg);}
+        }
+        @keyframes drGdJustinuskeBMSI{
+            0%{left: 90px;top: 30px;transform: rotate(+90deg);}
+            20%{left: 90px;top: 109px;transform: rotate(+90deg);}
+            30%{left: 90px;top: 109px;transform: rotate(0deg);}
+            40%{left: 520px;top: 109px;transform: rotate(0deg);}
+            50%{left: 520px;top: 109px;transform: rotate(-90deg);}
+            60%{left: 520px;top: 75px;transform: rotate(-90deg);}
+            70%{left: 520px;top: 75px;transform: rotate(-180deg);}
+            80%{left: 465px;top: 75px;transform: rotate(-180deg);}
+            90%{left: 465px;top: 75px;transform: rotate(-90deg);}
+            100%{left: 465px;top: 35px;transform: rotate(-90deg);}
+        }
+
+        @keyframes drGdAlbertuskeJustinus{
+            0%{left: 185px;top: 85px;transform: rotate(-180deg);}
+            40%{left: 90px;top: 85px;transform: rotate(-180deg);}
+            60%{left: 90px;top: 85px;transform: rotate(-90deg);}
+            80%{left: 90px;top: 35px;transform: rotate(-90deg);}
+            100%{left: 90px;top: 35px;transform: rotate(-180deg);}
+        }
+        @keyframes drGdAlbertuskeTa{
+            0%{left: 185px;top: 85px;transform: rotate(0deg);}
+            60%{left: 310px;top: 85px;transform: rotate(0deg);}
+            80%{left: 310px;top: 85px;transform: rotate(-90deg);}
+            100%{left: 310px;top: 70px;transform: rotate(-90deg);}
+        }
+        @keyframes drGdAlbertuskeMichael{
+            0%{left: 185px;top: 85px;transform: rotate(0deg);}
+            30%{left: 260px;top: 85px;transform: rotate(0deg);}
+            50%{left: 260px;top: 85px;transform: rotate(+90deg);}
+            60%{left: 260px;top: 109px;transform: rotate(+90deg);}
+            70%{left: 260px;top: 109px;transform: rotate(0deg);}
+            80%{left: 420px;top: 109px;transform: rotate(0deg);}
+            90%{left: 420px;top: 109px;transform: rotate(-90deg);}
+            100%{left: 420px;top: 74px;transform: rotate(-90deg);}
+        }
+        @keyframes drGdAlbertuskeAntonius{
+            0%{left: 185px;top: 85px;transform: rotate(0deg);}
+            30%{left: 260px;top: 85px;transform: rotate(0deg);}
+            50%{left: 260px;top: 85px;transform: rotate(+90deg);}
+            60%{left: 260px;top: 109px;transform: rotate(+90deg);}
+            70%{left: 260px;top: 109px;transform: rotate(0deg);}
+            80%{left: 560px;top: 109px;transform: rotate(0deg);}
+            90%{left: 560px;top: 109px;transform: rotate(-90deg);}
+            100%{left: 560px;top: 78px;transform: rotate(-90deg);}
+        }
+        @keyframes drGdAlbertuskeHc{
+            0%{left: 185px;top: 85px;transform: rotate(0deg);}
+            20%{left: 260px;top: 85px;transform: rotate(0deg);}
+            30%{left: 260px;top: 85px;transform: rotate(+90deg);}
+            40%{left: 260px;top: 109px;transform: rotate(+90deg);}
+            50%{left: 260px;top: 109px;transform: rotate(0deg);}
+            60%{left: 652px; top: 109px;transform: rotate(0deg);}
+            70%{left: 652px; top: 109px;transform: rotate(-90deg);}
+            80%{left: 652px; top: 60px;transform: rotate(-90deg);}
+            90%{left: 652px; top: 60px;transform: rotate(0deg);}
+            100%{left: 700px; top: 60px;transform: rotate(0deg);}
+        }
+        @keyframes drGdAlbertuskesporthall{
+            0%{left: 185px;top: 85px;transform: rotate(0deg);}
+            20%{left: 260px;top: 85px;transform: rotate(0deg);}
+            30%{left: 260px;top: 85px;transform: rotate(+90deg);}
+            40%{left: 260px;top: 109px;transform: rotate(+90deg);}
+            50%{left: 260px;top: 109px;transform: rotate(0deg);}
+            60%{left: 930px; top: 110px;transform: rotate(0deg);}
+            70%{left: 930px; top: 110px;transform: rotate(-90deg);}
+            80%{left: 900px; top: 90px;transform: rotate(-140deg);}
+            90%{left: 850px; top: 90px;transform: rotate(-180deg);}
+            100%{left: 850px; top: 90px;transform: rotate(-90deg);}
+        }
+        @keyframes drGdAlbertuskeBMSI{
+            0%{left: 185px;top: 85px;transform: rotate(0deg);}
+            5%{left: 260px;top: 85px;transform: rotate(0deg);}
+            10%{left: 260px;top: 85px;transform: rotate(+90deg);}
+            20%{left: 260px;top: 109px;transform: rotate(+90deg);}
+            30%{left: 260px;top: 109px;transform: rotate(0deg);}
+            40%{left: 520px;top: 109px;transform: rotate(0deg);}
+            50%{left: 520px;top: 109px;transform: rotate(-90deg);}
+            60%{left: 520px;top: 75px;transform: rotate(-90deg);}
+            70%{left: 520px;top: 75px;transform: rotate(-180deg);}
+            80%{left: 465px;top: 75px;transform: rotate(-180deg);}
+            90%{left: 465px;top: 75px;transform: rotate(-90deg);}
+            100%{left: 465px;top: 35px;transform: rotate(-90deg);}
+        }
+
+
+        @keyframes driGdTakeHc{
+            0%{left: 320px ;top: 85px;transform: rotate(0deg);}
+            20%{left: 370px;top: 85px;transform: rotate(0deg);}
+            40%{left: 370px;top: 85px;transform: rotate(+90deg);}
+            50%{left: 370px;top: 109px;transform: rotate(+90deg);}
+            60%{left: 370px;top: 109px;transform: rotate(0deg);}
+            70%{left: 652px;top: 109px;transform: rotate(0deg);}
+            80%{left: 652px;top: 109px;transform: rotate(-90deg);}
+            90%{left: 652px;top: 60px;transform: rotate(-90deg);}
+            100%{left: 652px;top: 60px;transform: rotate(0deg);}
+        }
+         @keyframes driGdTakesporthall{
+            0%{left: 320px ;top: 85px;transform: rotate(0deg);}
+            20%{left: 370px;top: 85px;transform: rotate(0deg);}
+            40%{left: 370px;top: 85px;transform: rotate(+90deg);}
+            50%{left: 370px;top: 109px;transform: rotate(+90deg);}
+            60%{left: 370px;top: 109px;transform: rotate(0deg);}
+            70%{left: 930px;top: 110px;transform: rotate(0deg);}
+            80%{left: 930px;top:110px;transform: rotate(-90deg);}
+            90%{left: 900px;top:90px;transform: rotate(-140deg);}
+            100%{left: 800px;top:90px;transform: rotate(-180deg);}
+        }
+        @keyframes driGdTakeJustinusSamping{
+            0%{left: 320px ;top: 85px;transform: rotate(-180deg);}
+            20%{left: 270px;top: 85px;transform: rotate(-180deg);}
+            40%{left: 270px;top: 85px;transform: rotate(-270deg);}
+            50%{left: 270px;top: 109px;transform: rotate(-270deg);}
+            60%{left: 270px;top: 109px;transform: rotate(-180deg);}
+            70%{left: 90px;top: 109px;transform: rotate(-180deg);}
+            80%{left: 90px;top: 109px;transform: rotate(-90deg);}
+            90%{left: 90px;top: 35px;transform: rotate(-90deg);}
+            100%{left: 90px;top: 35px;transform: rotate(-180deg);}
+        }
+        @keyframes driGdTakeAlbertus{
+            0%{left: 320px ;top: 85px;transform: rotate(-180deg);}
+            50%{left: 185px ;top: 85px;transform: rotate(-180deg);}
+            100%{left: 185px;top: 85px;transform: rotate(-90deg);}
+        }
+        @keyframes driGdTakeMichael{
+            0%{left: 320px ;top: 85px;transform: rotate(0deg);}
+            50%{left: 420px ;top: 85px;transform: rotate(0deg);}
+            80%{left: 420px;top: 85px;transform: rotate(-90deg);}
+            100%{left: 420px;top: 74px;transform: rotate(-90deg);}
+        }
+        @keyframes driGdTakeAntonius{
+            0%{left: 320px ;top: 85px;transform: rotate(0deg);}
+            20%{left: 370px;top: 85px;transform: rotate(0deg);}
+            40%{left: 370px;top: 85px;transform: rotate(+90deg);}
+            50%{left: 370px;top: 109px;transform: rotate(+90deg);}
+            60%{left: 370px;top: 109px;transform: rotate(0deg);}
+            70%{left: 560px;top: 109px;transform: rotate(0deg);}
+            80%{left: 560px;top: 109px;transform: rotate(-90deg);}
+            100%{left: 560px;top: 78px;transform: rotate(-90deg);}
+        }
+        @keyframes driGdTakeBMSI{
+            0%{left: 320px ;top: 85px;transform: rotate(0deg);}
+            5%{left: 370px;top: 85px;transform: rotate(0deg);}
+            10%{left: 370px;top: 85px;transform: rotate(+90deg);}
+            20%{left: 370px;top: 109px;transform: rotate(+90deg);}
+            30%{left: 370px;top: 109px;transform: rotate(0deg);}
+            40%{left: 520px;top: 109px;transform: rotate(0deg);}
+            50%{left: 520px;top: 109px;transform: rotate(-90deg);}
+            60%{left: 520px;top: 75px;transform: rotate(-90deg);}
+            70%{left: 520px;top: 75px;transform: rotate(-180deg);}
+            80%{left: 465px;top: 75px;transform: rotate(-180deg);}
+            90%{left: 465px;top: 75px;transform: rotate(-90deg);}
+            100%{left: 465px;top: 35px;transform: rotate(-90deg);}
+        }
+
+
+        @keyframes drGdMichaelkeJustinus{
+            0%{left: 420px;top: 74px;transform: rotate(-270deg);}
+            20%{left: 420px;top: 109px;transform: rotate(-270deg);}
+            40%{left: 420px;top: 109px;transform: rotate(-180deg);}
+            60%{left: 90px;top: 109px;transform: rotate(-180deg);}
+            80%{left: 90px;top: 109px;transform: rotate(-90deg);}
+            90%{left: 90px;top: 35px;transform: rotate(-90deg);}
+            100%{left: 90px;top: 35px;transform: rotate(-180deg);}
+        }
+        @keyframes drGdMichaelkeAlbertus{
+            0%{left: 420px;top: 74px;transform: rotate(-270deg);}
+            20%{left: 420px;top: 109px;transform: rotate(-270deg);}
+            40%{left: 420px; top: 109px;transform: rotate(-180deg);}
+            50%{left: 260px; top: 109px;transform: rotate(-180deg);}
+            60%{left: 260px; top: 109px;transform: rotate(-90deg);}
+            70%{left: 260px; top: 85px;transform: rotate(-90deg);}
+            80%{left: 260px; top: 85px;transform: rotate(-180deg);}
+            90%{left: 185px; top: 85px;transform: rotate(-180deg);}
+            100%{left: 185px; top: 85px;transform: rotate(-90deg);}
+        }
+        @keyframes drGdMichaelkeTa{
+            0%{left: 420px;top: 74px;transform: rotate(-270deg);}
+            20%{left: 420px;top: 87px;transform: rotate(-270deg);}
+            40%{left: 420px; top: 87px;transform: rotate(-180deg);}
+            60%{left: 310px; top: 83px;transform: rotate(-180deg);}
+            80%{left: 310px; top: 83px;transform: rotate(-90deg);}
+            100%{left: 310px; top: 70px;transform: rotate(-90deg);}
+        }
+        @keyframes drGdMichaelkeAntonius{
+            0%{left: 420px;top: 74px;transform: rotate(+90deg);}
+            20%{left: 420px;top: 109px;transform: rotate(+90deg);}
+            50%{left: 420px;top: 109px;transform: rotate(0deg);}
+            70%{left: 560px;top: 109px;transform: rotate(0deg);}
+            80%{left: 560px;top: 109px;transform: rotate(-90deg);}
+            100%{left: 560px;top: 78px;transform: rotate(-90deg);}
+        }
+        @keyframes drGdMichaelkeHc{
+            0%{left: 420px;top: 74px;transform: rotate(+90deg);}
+            20%{left: 420px;top: 109px;transform: rotate(+90deg);}
+            50%{left: 420px;top: 109px;transform: rotate(0deg);}
+            60%{left: 652px; top: 109px;transform: rotate(0deg);}
+            70%{left: 652px; top: 109px;transform: rotate(-90deg);}
+            80%{left: 652px; top: 60px;transform: rotate(-90deg);}
+            90%{left: 652px; top: 60px;transform: rotate(0deg);}
+            100%{left: 700px; top: 60px;transform: rotate(0deg);}
+        }
+        @keyframes drGdMichaelkesporthall{
+            0%{left: 420px;top: 74px;transform: rotate(+90deg);}
+            20%{left: 420px;top: 109px;transform: rotate(+90deg);}
+            50%{left: 420px;top: 109px;transform: rotate(0deg);}
+            60%{left: 930px; top: 110px;transform: rotate(0deg);}
+            70%{left: 930px; top: 110px;transform: rotate(-90deg);}
+            80%{left: 900px; top: 90px;transform: rotate(-140deg);}
+            90%{left: 850px; top: 90px;transform: rotate(-180deg);}
+            100%{left: 850px; top: 90px;transform: rotate(-90deg);}
+        }
+        @keyframes drGdMichaelkeBMSI{
+            0%{left: 420px;top: 74px;transform: rotate(+90deg);}
+            20%{left: 420px;top: 109px;transform: rotate(+90deg);}
+            30%{left: 420px;top: 109px;transform: rotate(0deg);}
+            40%{left: 520px;top: 109px;transform: rotate(0deg);}
+            50%{left: 520px;top: 109px;transform: rotate(-90deg);}
+            60%{left: 520px;top: 75px;transform: rotate(-90deg);}
+            70%{left: 520px;top: 75px;transform: rotate(-180deg);}
+            80%{left: 465px;top: 75px;transform: rotate(-180deg);}
+            90%{left: 465px;top: 75px;transform: rotate(-90deg);}
+            100%{left: 465px;top: 35px;transform: rotate(-90deg);}
+        }
+
+
+        @keyframes driAntoniuskeJustinus{
+            0%{left: 560px; top: 78px;transform: rotate(-270deg);}
+            20%{left: 560px; top: 109px;transform: rotate(-270deg);}
+            40%{left: 560px; top: 109px;transform: rotate(-180deg);}
+            60%{left: 90px; top: 109px;transform: rotate(-180deg);}
+            80%{left: 90px; top: 109px;transform: rotate(-90deg);}
+            90%{left: 90px; top: 35px;transform: rotate(-90deg);}
+            100%{left: 90px; top: 35px;transform: rotate(-180deg);}
+        }
+        @keyframes driAntoniuskeAlbertus{
+            0%{left: 560px; top: 78px;transform: rotate(-270deg);}
+            30%{left: 560px; top: 109px;transform: rotate(-270deg);}
+            40%{left: 560px; top: 109px;transform: rotate(-180deg);}
+            50%{left: 260px; top: 109px;transform: rotate(-180deg);}
+            60%{left: 260px; top: 109px;transform: rotate(-90deg);}
+            70%{left: 260px; top: 85px;transform: rotate(-90deg);}
+            80%{left: 260px; top: 85px;transform: rotate(-180deg);}
+            90%{left: 185px; top: 85px;transform: rotate(-180deg);}
+            100%{left: 185px; top: 85px;transform: rotate(-90deg);}
+        }
+        @keyframes driAntoniuskeTa{
+            0%{left: 560px; top: 78px;transform: rotate(-270deg);}
+            20%{left: 560px; top: 109px;transform: rotate(-270deg);}
+            30%{left: 560px; top: 109px;transform: rotate(-180deg);}
+            40%{left: 370px; top: 109px;transform: rotate(-180deg);}
+            50%{left: 370px; top: 109px;transform: rotate(-90deg);}
+            60%{left: 370px; top: 85px;transform: rotate(-90deg);}
+            70%{left: 370px; top: 85px;transform: rotate(-180deg);}
+            80%{left: 310px; top: 85px;transform: rotate(-180deg);}
+            90%{left: 310px; top: 85px;transform: rotate(-90deg);}
+            100%{left: 310px; top: 70px;transform: rotate(-90deg);}
+        }
+        @keyframes driAntoniuskeMichael{
+            0%{left: 560px; top: 78px;transform: rotate(-270deg);}
+            20%{left: 560px; top: 109px;transform: rotate(-270deg);}
+            40%{left: 560px; top: 109px;transform: rotate(-180deg);}
+            60%{left: 420px; top: 109px;transform: rotate(-180deg);}
+            80%{left: 420px; top: 109px;transform: rotate(-90deg);}
+            100%{left: 420px; top: 74px;transform: rotate(-90deg);}
+        }
+        @keyframes driAntoniuskeHc{
+            0%{left: 560px; top: 78px;transform: rotate(+90deg);}
+            20%{left: 560px; top: 109px;transform: rotate(+90deg);}
+            40%{left: 560px; top: 109px;transform: rotate(0deg);}
+            60%{left: 652px; top: 109px;transform: rotate(0deg);}
+            70%{left: 652px; top: 109px;transform: rotate(-90deg);}
+            80%{left: 652px; top: 60px;transform: rotate(-90deg);}
+            90%{left: 652px; top: 60px;transform: rotate(0deg);}
+            100%{left: 700px; top: 60px;transform: rotate(0deg);}
+        }
+        @keyframes driAntoniuskesporthall{
+            0%{left: 560px; top: 78px;transform: rotate(+90deg);}
+            20%{left: 560px; top: 109px;transform: rotate(+90deg);}
+            40%{left: 560px; top: 109px;transform: rotate(0deg);}
+            60%{left: 930px; top: 110px;transform: rotate(0deg);}
+            70%{left: 930px; top: 110px;transform: rotate(-90deg);}
+            80%{left: 900px; top: 90px;transform: rotate(-140deg);}
+            90%{left: 850px; top: 90px;transform: rotate(-180deg);}
+            100%{left: 850px; top: 90px;transform: rotate(-90deg);}
+        }
+        @keyframes driAntoniuskeBMSI{
+            0%{left: 560px; top: 78px;transform: rotate(-270deg);}
+            20%{left: 560px; top: 109px;transform: rotate(-270deg);}
+            30%{left: 560px; top: 109px;transform: rotate(-180deg);}
+            40%{left: 520px;top: 109px;transform: rotate(-180deg);}
+            50%{left: 520px;top: 109px;transform: rotate(-90deg);}
+            60%{left: 520px;top: 75px;transform: rotate(-90deg);}
+            70%{left: 520px;top: 75px;transform: rotate(-180deg);}
+            80%{left: 465px;top: 75px;transform: rotate(-180deg);}
+            90%{left: 465px;top: 75px;transform: rotate(-90deg);}
+            100%{left: 465px;top: 35px;transform: rotate(-90deg);}
+        }
+
+
+        @keyframes drHckeJustinus{
+            0%{left: 700px; top: 60px;transform: rotate(-180deg);}
+            20%{left: 652px; top: 60px;transform: rotate(-180deg);}
+            40%{left: 652px; top: 60px;transform: rotate(-270deg);}
+            50%{left: 652px; top: 109px;transform: rotate(-270deg);}
+            60%{left: 652px; top: 109px;transform: rotate(-180deg);}
+            70%{left: 90px; top: 109px;transform: rotate(-180deg);}
+            80%{left: 90px; top: 109px;transform: rotate(-90deg);}
+            90%{left: 90px; top: 35px;transform: rotate(-90deg);}
+            100%{left: 90px; top: 35px;transform: rotate(-180deg);}
+        }
+        @keyframes drHckeAlbertus{
+            0%{left: 700px; top: 60px;transform: rotate(-180deg);}
+            10%{left: 652px; top: 60px;transform: rotate(-180deg);}
+            20%{left: 652px; top: 60px;transform: rotate(-270deg);}
+            30%{left: 652px; top: 109px;transform: rotate(-270deg);}
+            40%{left: 652px; top: 109px;transform: rotate(-180deg);}
+            50%{left: 260px; top: 109px;transform: rotate(-180deg);}
+            60%{left: 260px; top: 109px;transform: rotate(-90deg);}
+            70%{left: 260px; top: 85px;transform: rotate(-90deg);}
+            80%{left: 260px; top: 85px;transform: rotate(-180deg);}
+            90%{left: 185px; top: 85px;transform: rotate(-180deg);}
+            100%{left: 185px; top: 85px;transform: rotate(-90deg);}
+        }
+        @keyframes drHckeTa{
+            0%{left: 700px; top: 60px;transform: rotate(-180deg);}
+            5%{left: 652px; top: 60px;transform: rotate(-180deg);}
+            10%{left: 652px; top: 60px;transform: rotate(-270deg);}
+            20%{left: 652px; top: 109px;transform: rotate(-270deg);}
+            30%{left: 652px; top: 109px;transform: rotate(-180deg);}
+            40%{left: 370px; top: 109px;transform: rotate(-180deg);}
+            50%{left: 370px; top: 109px;transform: rotate(-90deg);}
+            60%{left: 370px; top: 85px;transform: rotate(-90deg);}
+            70%{left: 370px; top: 85px;transform: rotate(-180deg);}
+            80%{left: 310px; top: 85px;transform: rotate(-180deg);}
+            90%{left: 310px; top: 85px;transform: rotate(-90deg);}
+            100%{left: 310px; top: 70px;transform: rotate(-90deg);}
+        }
+        @keyframes drHckeMichael{
+            0%{left: 700px; top: 60px;transform: rotate(-180deg);}
+            20%{left: 652px; top: 60px;transform: rotate(-180deg);}
+            30%{left: 652px; top: 60px;transform: rotate(-270deg);}
+            40%{left: 652px; top: 109px;transform: rotate(-270deg);}
+            50%{left: 652px; top: 109px;transform: rotate(-180deg);}
+            70%{left: 420px; top: 109px;transform: rotate(-180deg);}
+            80%{left: 420px; top: 109px;transform: rotate(-90deg);}
+            100%{left: 420px; top: 74px;transform: rotate(-90deg);}
+        }
+        @keyframes drHckeAntonius{
+            0%{left: 700px; top: 60px;transform: rotate(-180deg);}
+            20%{left: 652px; top: 60px;transform: rotate(-180deg);}
+            30%{left: 652px; top: 60px;transform: rotate(-270deg);}
+            40%{left: 652px; top: 109px;transform: rotate(-270deg);}
+            50%{left: 652px; top: 109px;transform: rotate(-180deg);}
+            70%{left: 560px; top: 109px;transform: rotate(-180deg);}
+            80%{left: 560px; top: 109px;transform: rotate(-90deg);}
+            100%{left: 560px; top: 79px;transform: rotate(-90deg);}
+        }
+        @keyframes drHckesporthall{
+            0%{left: 700px; top: 60px;transform: rotate(+180deg);}
+            20%{left: 652px; top: 60px;transform: rotate(+180deg);}
+            30%{left: 652px; top: 60px;transform: rotate(+90deg);}
+            40%{left: 652px; top: 109px;transform: rotate(+90deg);}
+            50%{left: 652px; top: 109px;transform: rotate(0deg);}
+            60%{left: 930px; top: 110px;transform: rotate(0deg);}
+            70%{left: 930px; top: 110px;transform: rotate(-90deg);}
+            80%{left: 900px; top: 90px;transform: rotate(-140deg);}
+            90%{left: 850px; top: 90px;transform: rotate(-180deg);}
+            100%{left: 850px; top: 90px;transform: rotate(-90deg);}
+        }
+        @keyframes drHckeBMSI{
+            0%{left: 700px; top: 60px;transform: rotate(-180deg);}
+            5%{left: 652px; top: 60px;transform: rotate(-180deg);}
+            10%{left: 652px; top: 60px;transform: rotate(-270deg);}
+            20%{left: 652px; top: 109px;transform: rotate(-270deg);}
+            30%{left: 652px; top: 109px;transform: rotate(-180deg);}
+            40%{left: 520px;top: 109px;transform: rotate(-180deg);}
+            50%{left: 520px;top: 109px;transform: rotate(-90deg);}
+            60%{left: 520px;top: 75px;transform: rotate(-90deg);}
+            70%{left: 520px;top: 75px;transform: rotate(-180deg);}
+            80%{left: 465px;top: 75px;transform: rotate(-180deg);}
+            90%{left: 465px;top: 75px;transform: rotate(-90deg);}
+            100%{left: 465px;top: 35px;transform: rotate(-90deg);}
+        }
+
+
+        @keyframes drBMSIkejustinus{
+            0%{left: 465px; top: 35px;transform: rotate(+90deg);}
+            5%{left: 465px; top: 75px;transform: rotate(+90deg);}
+            10%{left: 465px; top: 75px;transform: rotate(0deg);}
+            20%{left: 520px; top: 75px;transform: rotate(0deg);}
+            30%{left: 520px; top: 75px;transform: rotate(+90deg);}
+            40%{left: 520px;top: 109px;transform: rotate(+90deg);}
+            50%{left: 520px;top: 109px;transform: rotate(+180deg);}
+            60%{left: 90px; top: 109px;transform: rotate(+180deg);}
+            80%{left: 90px; top: 109px;transform: rotate(+270deg);}
+            90%{left: 90px; top: 35px;transform: rotate(+270deg);}
+            100%{left: 90px; top: 35px;transform: rotate(+180deg);}
+        }
+        @keyframes drBMSIkeAlbertus{
+            0%{left: 465px; top: 35px;transform: rotate(+90deg);}
+            5%{left: 465px; top: 75px;transform: rotate(+90deg);}
+            10%{left: 465px; top: 75px;transform: rotate(0deg);}
+            20%{left: 520px; top: 75px;transform: rotate(0deg);}
+            30%{left: 520px; top: 75px;transform: rotate(+90deg);}
+            40%{left: 520px;top: 109px;transform: rotate(+90deg);}
+            50%{left: 520px; top: 109px;transform: rotate(+180deg);}
+            60%{left: 260px; top: 109px;transform: rotate(+180deg);}
+            70%{left: 260px; top: 109px;transform: rotate(+270deg);}
+            80%{left: 260px; top: 85px;transform: rotate(+270deg);}
+            90%{left: 260px; top: 85px;transform: rotate(+180deg);}
+            100%{left: 185px; top: 85px;transform: rotate(+180deg);}
+        }
+        @keyframes drBMSIkeTa{
+            0%{left: 465px; top: 35px;transform: rotate(+90deg);}
+            5%{left: 465px; top: 75px;transform: rotate(+90deg);}
+            10%{left: 465px; top: 75px;transform: rotate(0deg);}
+            20%{left: 520px; top: 75px;transform: rotate(0deg);}
+            30%{left: 520px; top: 75px;transform: rotate(+90deg);}
+            40%{left: 520px;top: 109px;transform: rotate(+90deg);}
+            50%{left: 520px; top: 109px;transform: rotate(+180deg);}
+            60%{left: 370px; top: 109px;transform: rotate(+180deg);}
+            70%{left: 370px; top: 109px;transform: rotate(+270deg);}
+            80%{left: 370px; top: 85px;transform: rotate(+270deg);}
+            90%{left: 370px; top: 85px;transform: rotate(+180deg);}
+            95%{left: 310px; top: 85px;transform: rotate(+180deg);}
+            100%{left: 310px; top: 70px;transform: rotate(+270deg);}
+        }
+        @keyframes drBMSIkeMichael{
+            0%{left: 465px; top: 35px;transform: rotate(+90deg);}
+            5%{left: 465px; top: 75px;transform: rotate(+90deg);}
+            10%{left: 465px; top: 75px;transform: rotate(0deg);}
+            20%{left: 520px; top: 75px;transform: rotate(0deg);}
+            30%{left: 520px; top: 75px;transform: rotate(+90deg);}
+            40%{left: 520px;top: 109px;transform: rotate(+90deg);}
+            50%{left: 520px; top: 109px;transform: rotate(+180deg);}
+            60%{left: 420px; top: 109px;transform: rotate(+180deg);}
+            80%{left: 420px; top: 109px;transform: rotate(+270deg);}
+            100%{left: 420px; top: 74px;transform: rotate(+270deg);}
+        }
+        @keyframes drBMSIkeAntonius{
+            0%{left: 465px; top: 35px;transform: rotate(+90deg);}
+            5%{left: 465px; top: 75px;transform: rotate(+90deg);}
+            10%{left: 465px; top: 75px;transform: rotate(0deg);}
+            20%{left: 520px; top: 75px;transform: rotate(0deg);}
+            30%{left: 520px; top: 75px;transform: rotate(+90deg);}
+            40%{left: 520px;top: 109px;transform: rotate(+90deg);}
+            50%{left: 520px; top: 109px;transform: rotate(0deg);}
+            70%{left: 560px;top: 109px;transform: rotate(0deg);}
+            80%{left: 560px;top: 109px;transform: rotate(-90deg);}
+            100%{left: 560px;top: 78px;transform: rotate(-90deg);}
+        }
+        @keyframes drBMSIkeHc{
+            0%{left: 465px; top: 35px;transform: rotate(+90deg);}
+            5%{left: 465px; top: 75px;transform: rotate(+90deg);}
+            10%{left: 465px; top: 75px;transform: rotate(0deg);}
+            20%{left: 520px; top: 75px;transform: rotate(0deg);}
+            30%{left: 520px; top: 75px;transform: rotate(+90deg);}
+            40%{left: 520px;top: 109px;transform: rotate(+90deg);}
+            50%{left: 520px; top: 109px;transform: rotate(0deg);}
+            60%{left: 652px; top: 109px;transform: rotate(0deg);}
+            70%{left: 652px; top: 109px;transform: rotate(-90deg);}
+            80%{left: 652px; top: 60px;transform: rotate(-90deg);}
+            90%{left: 652px; top: 60px;transform: rotate(0deg);}
+            100%{left: 700px; top: 60px;transform: rotate(0deg);}
+        }
+        @keyframes drBMSIkesporthall{
+            0%{left: 465px; top: 35px;transform: rotate(+90deg);}
+            5%{left: 465px; top: 75px;transform: rotate(+90deg);}
+            10%{left: 465px; top: 75px;transform: rotate(0deg);}
+            20%{left: 520px; top: 75px;transform: rotate(0deg);}
+            30%{left: 520px; top: 75px;transform: rotate(+90deg);}
+            40%{left: 520px;top: 109px;transform: rotate(+90deg);}
+            50%{left: 520px; top: 109px;transform: rotate(0deg);}
+            60%{left: 930px; top: 110px;transform: rotate(0deg);}
+            70%{left: 930px; top: 110px;transform: rotate(-90deg);}
+            80%{left: 900px; top: 90px;transform: rotate(-140deg);}
+            90%{left: 850px; top: 90px;transform: rotate(-180deg);}
+            100%{left: 850px; top: 90px;transform: rotate(-90deg);}
+        }
+
+
+        @keyframes driPintuMasukkeHcnaikmobil{
+            0%{left: 5px ;top: 5px;transform: rotate(+90deg);}
+            30%{left: 5px;top: 109px;transform: rotate(+90deg);}
+            50%{left: 5px;top: 109px;transform: rotate(0deg);}
+            70%{left: 652px;top: 109px;transform: rotate(0deg);}
+            80%{left: 652px;top: 109px;transform: rotate(-90deg);}
+            100%{left: 652px;top: 60px;transform: rotate(-90deg);}
+        }
+        @keyframes driPintuMasukkesporthallnaikmobil{
+            0%{left: 5px ;top: 5px;transform: rotate(+90deg);}
+            30%{left: 5px;top: 109px;transform: rotate(+90deg);}
+            60%{left: 5px;top: 110px;transform: rotate(0deg);}
+            70%{left: 930px;top: 110px;transform: rotate(0deg);}
+            80%{left: 930px;top:110px;transform: rotate(-90deg);}
+            90%{left: 900px;top:90px;transform: rotate(-140deg);}
+            100%{left: 800px;top:90px;transform: rotate(-180deg);}
+        }
+        @keyframes driPintuMasukkejustinusDpnnaikmobil{
+            0%{left: 5px ;top: 5px;transform: rotate(+90deg);}
+            40%{left: 5px;top: 109px;transform: rotate(+90deg);}
+            80%{left: 5px;top: 109px;transform: rotate(0deg);}
+            100%{left: 45px;top: 109px;transform: rotate(0deg);}
+        }
+        @keyframes drPintuMasukkeAlbertusnaikmobil{
+            0%{left: 5px ;top: 5px;transform: rotate(+90deg);}
+            40%{left: 5px;top: 109px;transform: rotate(+90deg);}
+            80%{left: 5px;top: 109px;transform: rotate(0deg);}
+            100%{left: 185px;top: 109px;transform: rotate(0deg);}
+        }
+        @keyframes drPintuMasukkeTanaikmobil{
+            0%{left: 5px ;top: 5px;transform: rotate(+90deg);}
+            20%{left: 5px;top: 109px;transform: rotate(+90deg);}
+            30%{left: 5px;top: 109px;transform: rotate(0deg);}
+            40%{left: 270px;top: 109px;transform: rotate(0deg);}
+            50%{left: 270px;top: 109px;transform: rotate(-90deg);}
+            60%{left: 270px;top: 85px;transform: rotate(-90deg);}
+            80%{left: 270px;top: 85px;transform: rotate(0deg);}
+            100%{left: 310px;top: 85px;transform: rotate(0deg);}
+        }
+        @keyframes drPintuMasukkeMichaelnaikmobil{
+            0%{left: 5px ;top: 5px;transform: rotate(+90deg);}
+            40%{left: 5px;top: 109px;transform: rotate(+90deg);}
+            80%{left: 5px;top: 109px;transform: rotate(0deg);}
+            100%{left: 420px;top: 109px;transform: rotate(0deg);}
+        }
+        @keyframes drPintuMasukkeAntoniusnaikmobil{
+            0%{left: 5px ;top: 5px;transform: rotate(+90deg);}
+            40%{left: 5px;top: 109px;transform: rotate(+90deg);}
+            80%{left: 5px;top: 109px;transform: rotate(0deg);}
+            100%{left: 560px;top: 109px;transform: rotate(0deg);}
+        }
+
+        @keyframes drGdJustinkeHcnaikmobil{
+            0%{left: 90px;top: 30px;transform: rotate(+90deg);}
+            30%{left: 90px;top: 109px;transform: rotate(+90deg);}
+            50%{left: 90px;top: 109px;transform: rotate(0deg);}
+            70%{left: 652px;top: 109px;transform: rotate(0deg);}
+            80%{left: 652px;top: 109px;transform: rotate(-90deg);}
+            100%{left: 652px;top: 60px;transform: rotate(-90deg);}
+        }
+        @keyframes drGdJustinkesporthallnaikmobil{
+            0%{left: 20px;top: 109px;transform: rotate(0deg);}
+            30%{left: 930px;top: 110px;transform: rotate(0deg);}
+            50%{left: 930px;top:110px;transform: rotate(-90deg);}
+            80%{left: 900px;top:90px;transform: rotate(-140deg);}
+            100%{left: 800px;top:90px;transform: rotate(-180deg);}
+        }
+        @keyframes drGdJustinkeAlbertusnaikmobil{
+            0%{left: 90px;top: 30px;transform: rotate(+90deg);}
+            40%{left: 90px;top: 109px;transform: rotate(+90deg);}
+            80%{left: 90px;top: 109px;transform: rotate(0deg);}
+            100%{left: 185px;top: 109px;transform: rotate(0deg);}
+        }
+        @keyframes drGdJustinkeTanaikmobil{
+            0%{left: 90px;top: 30px;transform: rotate(+90deg);}
+            20%{left: 90px;top: 109px;transform: rotate(+90deg);}
+            30%{left: 90px;top: 109px;transform: rotate(0deg);}
+            40%{left: 270px;top: 109px;transform: rotate(0deg);}
+            50%{left: 270px;top: 109px;transform: rotate(-90deg);}
+            60%{left: 270px;top: 85px;transform: rotate(-90deg);}
+            80%{left: 270px;top: 85px;transform: rotate(0deg);}
+            100%{left: 310px;top: 85px;transform: rotate(0deg);}
+        }
+        @keyframes drGdJustinuskeMichaelnaikmobil{
+            0%{left: 90px;top: 30px;transform: rotate(+90deg);}
+            40%{left: 90px;top: 109px;transform: rotate(+90deg);}
+            80%{left: 90px;top: 109px;transform: rotate(0deg);}
+            100%{left: 420px;top: 109px;transform: rotate(0deg);}
+        }
+        @keyframes drGdJustinuskeAntoniusnaikmobil{
+            0%{left: 90px;top: 30px;transform: rotate(+90deg);}
+            40%{left: 90px;top: 109px;transform: rotate(+90deg);}
+            80%{left: 90px;top: 109px;transform: rotate(0deg);}
+            100%{left: 560px;top: 109px;transform: rotate(0deg);}
+        }
+
+        @keyframes drGdAlbertuskeHcnaikmobil{
+            0%{left: 185px;top: 85px;transform: rotate(0deg);}
+            20%{left: 260px;top: 85px;transform: rotate(0deg);}
+            30%{left: 260px;top: 85px;transform: rotate(+90deg);}
+            40%{left: 260px;top: 109px;transform: rotate(+90deg);}
+            50%{left: 260px;top: 109px;transform: rotate(0deg);}
+            70%{left: 652px;top: 109px;transform: rotate(0deg);}
+            80%{left: 652px;top: 109px;transform: rotate(-90deg);}
+            100%{left: 652px;top: 60px;transform: rotate(-90deg);}
+        }
+        @keyframes drGdAlbertuskeTanaikmobil{
+            0%{left: 90px;top: 30px;transform: rotate(+90deg);}
+            20%{left: 90px;top: 109px;transform: rotate(+90deg);}
+            30%{left: 90px;top: 109px;transform: rotate(0deg);}
+            40%{left: 270px;top: 109px;transform: rotate(0deg);}
+            50%{left: 270px;top: 109px;transform: rotate(-90deg);}
+            60%{left: 270px;top: 85px;transform: rotate(-90deg);}
+            80%{left: 270px;top: 85px;transform: rotate(0deg);}
+            100%{left: 310px;top: 85px;transform: rotate(0deg);}
+        }
+        @keyframes drGdAlbertuskeMichaelnaikmobil{
+            0%{left: 185px;top: 85px;transform: rotate(0deg);}
+            30%{left: 260px;top: 85px;transform: rotate(0deg);}
+            50%{left: 260px;top: 85px;transform: rotate(+90deg);}
+            60%{left: 260px;top: 109px;transform: rotate(+90deg);}
+            80%{left: 260px;top: 109px;transform: rotate(0deg);}
+            100%{left: 450px;top:109px;transform: rotate(0deg);}
+        }
+        @keyframes drGdAlbertuskeAntoniusnaikmobil{
+            0%{left: 185px;top: 85px;transform: rotate(0deg);}
+            30%{left: 260px;top: 85px;transform: rotate(0deg);}
+            50%{left: 260px;top: 85px;transform: rotate(+90deg);}
+            60%{left: 260px;top: 109px;transform: rotate(+90deg);}
+            80%{left: 260px;top: 109px;transform: rotate(0deg);}
+            100%{left: 560px;top:109px;transform: rotate(0deg);}
+        }
+
+        @keyframes driGdTakeHcnaikmobil{
+            0%{left: 320px ;top: 85px;transform: rotate(0deg);}
+            20%{left: 370px;top: 85px;transform: rotate(0deg);}
+            40%{left: 370px;top: 85px;transform: rotate(+90deg);}
+            50%{left: 370px;top: 109px;transform: rotate(+90deg);}
+            60%{left: 370px;top: 109px;transform: rotate(0deg);}
+            70%{left: 652px;top: 109px;transform: rotate(0deg);}
+            80%{left: 652px;top: 109px;transform: rotate(-90deg);}
+            100%{left: 652px;top: 60px;transform: rotate(-90deg);}
+        }
+        @keyframes driGdTakesporthallnaikmobil{
+            0%{left: 320px ;top: 85px;transform: rotate(0deg);}
+            20%{left: 370px;top: 85px;transform: rotate(0deg);}
+            40%{left: 370px;top: 85px;transform: rotate(+90deg);}
+            50%{left: 370px;top: 109px;transform: rotate(+90deg);}
+            60%{left: 370px;top: 109px;transform: rotate(0deg);}
+            70%{left: 930px;top: 110px;transform: rotate(0deg);}
+            80%{left: 930px;top:110px;transform: rotate(-90deg);}
+            90%{left: 900px;top:90px;transform: rotate(-140deg);}
+            100%{left: 800px;top:90px;transform: rotate(-180deg);}
+        }
+        @keyframes driGdTakeMichaelnaikmobil{
+            0%{left: 320px ;top: 85px;transform: rotate(0deg);}
+            20%{left: 370px ;top: 85px;transform: rotate(0deg);}
+            40%{left: 370px;top: 85px;transform: rotate(+90deg);}
+            60%{left: 370px;top: 109px;transform: rotate(+90deg);}
+            80%{left: 370px;top: 109px;transform: rotate(0deg);}
+            100%{left: 420px;top: 109px;transform: rotate(0deg);}
+        }
+        @keyframes driGdTakeAntoniusnaikmobil{
+            0%{left: 320px ;top: 85px;transform: rotate(0deg);}
+            20%{left: 370px;top: 85px;transform: rotate(0deg);}
+            40%{left: 370px;top: 85px;transform: rotate(+90deg);}
+            50%{left: 370px;top: 109px;transform: rotate(+90deg);}
+            60%{left: 370px;top: 109px;transform: rotate(0deg);}
+            100%{left: 560px;top: 109px;transform: rotate(0deg);}
+        }
+
+        @keyframes drGdMichaelkeAntoniusnaikmobil{
+            0%{left: 420px;top: 109px;transform: rotate(0deg);}
+            100%{left: 560px;top: 109px;transform: rotate(0deg);}
+        }
+        @keyframes drGdMichaelkeHcnaikmobil{
+            0%{left: 420px;top: 109px;transform: rotate(0deg);}
+            40%{left: 652px; top: 109px;transform: rotate(0deg);}
+            80%{left: 652px; top: 109px;transform: rotate(-90deg);}
+            100%{left: 652px; top: 60px;transform: rotate(-90deg);}
+        }
+        @keyframes drGdMichaelkesporthallnaikmobil{
+            0%{left: 420px;top: 109px;transform: rotate(0deg);}
+            30%{left: 930px; top: 110px;transform: rotate(0deg);}
+            50%{left: 930px; top: 110px;transform: rotate(-90deg);}
+            70%{left: 900px; top: 90px;transform: rotate(-140deg);}
+            90%{left: 850px; top: 90px;transform: rotate(-180deg);}
+            100%{left: 850px; top: 90px;transform: rotate(-90deg);}
+        }
+
+
+        @keyframes driAntoniuskeHcnaikmobil{
+            0%{left: 560px; top: 109px;transform: rotate(0deg);}
+            40%{left: 652px; top: 109px;transform: rotate(0deg);}
+            80%{left: 652px; top: 109px;transform: rotate(-90deg);}
+            100%{left: 652px; top: 60px;transform: rotate(-90deg);}
+        }
+        @keyframes driAntoniuskesporthallnaikmobil{
+            0%{left: 560px; top: 109px;transform: rotate(0deg);}
+            60%{left: 930px; top: 110px;transform: rotate(0deg);}
+            70%{left: 930px; top: 110px;transform: rotate(-90deg);}
+            80%{left: 900px; top: 90px;transform: rotate(-140deg);}
+            90%{left: 850px; top: 90px;transform: rotate(-180deg);}
+            100%{left: 850px; top: 90px;transform: rotate(-90deg);}
+        }
+        @keyframes drHckesporthallnaikmobil{
+            0%{left: 652px; top: 60px;transform: rotate(+90deg);}
+            30%{left: 652px; top: 109px;transform: rotate(+90deg);}
+            50%{left: 652px; top: 109px;transform: rotate(0deg);}
+            60%{left: 930px; top: 110px;transform: rotate(0deg);}
+            70%{left: 930px; top: 110px;transform: rotate(-90deg);}
+            80%{left: 900px; top: 90px;transform: rotate(-140deg);}
+            90%{left: 850px; top: 90px;transform: rotate(-180deg);}
+            100%{left: 850px; top: 90px;transform: rotate(-90deg);}
+        }
+
+        </style>
+    <body>
+        <div id="h1">
+            <h1>MAP ANIMASI </br>
+            UNIVERSITAS KATHOLIK SOEGIJAPRANATA
+            <hr/>
+            </h1>
+            <img id="image" src="img/logomobil.png" width="20" height="20">
+            <img id="reset" src="img/reloadlogo.png" width="20" height="20">
+
+                Transportasi:
+                <select id="kendaraan">
+                    <option value="1">JalanKaki</option>
+                    <option value="2">Kendaraan</option>
+                </select>
+                Dari:
+                <select id="Dari">
+                    <option  value="1">Pintu Gerbang Utama</option>
+                    <option value="2">GEDUNG Justinus</option>
+                    <option value="3">GEDUNG Albertus</option>
+                    <option value="4">GEDUNG Thomas Aquinas</option>
+                    <option value="5">GEDUNG Michael</option>
+                    <option value="6">GEDUNG Antonius</option>
+                    <option value="7">GEDUNG Henricus constant</option>
+                    <option value="8">BMSI</option>
+                </select>
+                    Tujuan:
+                    <select id="Tujuan">
+                        <option value="1">GEDUNG Justinus</option>
+                        <option value="2">GEDUNG Albertus</option>
+                        <option value="3">GEDUNG Thomas Aquinas</option>
+                        <option value="4">GEDUNG Michael</option>
+                        <option value="5">GEDUNG Antonius</option>
+                        <option value="6">Gedung Henricus constant</option>
+                        <option value="7">Gedung SportHall</option>
+                        <option value="8">BMSI</option>
+                    </select>
+                <button  onclick="myFunction()">Submit</button>
+                </br>
+                    <div id="d1">
+                        <div  id="rumput">&nbsp;</div>
+                        <div  id="rumput2">&nbsp;</div>
+                        <div  id="rumput3">&nbsp;</div>
+                        <div  id="rumput4">&nbsp;</div>
+                        <div  id="rumput5">&nbsp;</div>
+                        <div  id="rumput6">&nbsp;</div>
+                        <div  id="rumput7">&nbsp;</div>
+
+                        <canvas  id="luarjustinus">&nbsp;</canvas>
+                        <canvas  id="pagerdpnlapbasket">&nbsp;</canvas>
+                        <canvas  id="Tamandpnta">&nbsp;</canvas>
+                        <canvas  id="pagerdpnta">&nbsp;</canvas>
+                        <canvas  id="pagerdpnta2">&nbsp;</canvas>
+                        <canvas  id="jalanrumput">&nbsp;</canvas>
+                        <canvas  id="jalansamping">&nbsp;</canvas>
+                        <canvas  id="jalanluar">&nbsp;</canvas>
+
+                        <img id="canvas1"></img>
+                        <canvas id="canvas2"></canvas>
+                        <canvas id="myCanvas"></canvas>
+
+                        <div onclick="location.href='gedunghclt5.html';" id="hc">&nbsp;</div>
+                        <div onclick="location.href='gedunghclt5.html';" id="hc2">&nbsp;</div>
+                        <div onclick="tetod2()" id="satpam">&nbsp;</div>
+                        <div  onclick="tetod3()" id="atm">&nbsp;</div>
+                        <div onclick="tetod()" id="jst">&nbsp;</div>
+                        <div onclick="tetod()" id="albert">&nbsp;</div>
+                        <div onclick="tetod()" id="albert2">&nbsp;</div>
+                        <div onclick="tetod()" id="ta">&nbsp;</div>
+                        <div onclick="tetod()" id="ta2">&nbsp;</div>
+                        <div onclick="tetod()" id="ta3">&nbsp;</div>
+                        <div onclick="tetod()" id="mch">&nbsp;</div>
+                        <div onclick="tetod()" id="bmsi">&nbsp;</div>
+                        <div onclick="tetod()" id="anton">&nbsp;</div>
+                        <div onclick="tetod()" id="anton2">&nbsp;</div>
+                        <div onclick="tetod()" id="anton3">&nbsp;</div>
+                        <div onclick="tetod()" id="anton4">&nbsp;</div>
+                        <div onclick="tetod()" id="sporthall">&nbsp;</div>
+
+                    </div>
+            <hr/>
+        <p> untuk melihat detail gedung silahkan anda mengklik di gedung yang di inginkan. </p>
+        <p id="teks"></P>
+        <p id="cetak"></P>
+        <p id="p2">
+        keterangan: </br>
+        Warna Kuning : Gedung Justinus (FEB)</br>
+        Warna Hijau : Gedung Albertus (TEKNIK)</br>
+        Warna Ungu : Gedung Thomas Aquinas (S2 MANAJEMEN)</br>
+        Warna Merah : Gedung Michael (ADMINISTRASI,REKTORAT,HUKUM)</br>
+        Warna Merah Jambu : Gedung Antonius(HUKUM,PSIKOLOGI)</br>
+        Warna Biru : Gedung Henricus Contatan(IKOM,TEKNIK,FAD,FBS)</br>
+        </p>
+    </div>
+</body>
+    <script type="text/javascript">
+            var gambar= new Image();
+            gambar.src="img/mobil.png";
+
+            var pohon1= new Image();
+            pohon1.src="img/pohon1.png";
+             var pohon2= new Image();
+            pohon2.src="img/pohon2.png";
+             var pohon3= new Image();
+            pohon3.src="img/pohon3.png";
+             var pohon4= new Image();
+            pohon4.src="img/pohon4.png";
+             var pohon5= new Image();
+            pohon5.src="img/pohon5.png";
+
+            function gantiGambar() {
+                document.getElementById('canvas1').src="img/mobil3.png";
+                document.getElementById('teks').textContent = "gambar mobil aktif";
+            }
+            
+            document.getElementById('image').addEventListener("click", function() {
+                gantiGambar();
+            });
+            document.getElementById('canvas1').addEventListener("click", function() {
+                gantiGambar();
+            });
+
+            document.getElementById('reset').onclick = function() {
+                document.getElementById("canvas1").src="img/anakpanah.png";
+                document.getElementById('teks').textContent = "";
+            }
+
+
+            var canvas = document.getElementById("myCanvas");
+            var ctx = canvas.getContext("2d");
+            
+            canvas.width= canvas.scrollWidth;
+            canvas.height= canvas.scrollHeight;
+
+            function tetod(){
+                alert("DATA BELUM TERSEDIA");
+            }
+            function tetod2(){
+                alert("Post Satpam");
+            }
+            function tetod3(){
+                alert("ATM");
+            }
+                    function aksikanvas(){
+                    var canvas1=document.getElementById('canvas2');          
+                    var ctx1= canvas1.getContext("2d");
+
+                    canvas1.width=canvas1.scrollWidth;
+                    canvas1.height=canvas1.scrollHeight;
+
+                    var cW=canvas1.width;
+                    var cH=canvas1.height;     
+                            
+                            function Mobil1(){
+                                this.x=0, this.y=170, this.w=30,this.h=20;
+                                this.render=function(){
+                                    ctx1.drawImage(gambar,this.x++,this.y,this.w,this.h);
+
+                                        if(this.x==1129){
+                                            this.x=0;
+                                        }
+                                }
+                            }
+
+                            var mobil1=new Mobil1();
+
+                            function Mobil2(){
+                                this.x=-200, this.y=180, this.w=30,this.h=20;
+                                this.render=function(){
+                                    ctx1.drawImage(gambar,this.x++,this.y,this.w,this.h);
+
+                                        if(this.x==1129){
+                                            this.x=0;
+                                        }
+                                }
+                            }
+
+                            var mobil2=new Mobil2();
+
+                            function tree1(){
+                                this.x=20, this.y=145, this.w=35,this.h=25;
+                                this.render=function(){
+                                    ctx1.drawImage(pohon1,this.x,this.y,this.w,this.h);
+                                }
+                            }
+
+                            var Pohon1=new tree1();
+
+                            function tree2(){
+                                this.x=50, this.y=145, this.w=35,this.h=25;
+                                this.render=function(){
+                                    ctx1.drawImage(pohon1,this.x,this.y,this.w,this.h);
+                                }
+                            }
+
+                            var Pohon2=new tree2();
+
+                            function tree3(){
+                                this.x=100, this.y=145, this.w=35,this.h=25;
+                                this.render=function(){
+                                    ctx1.drawImage(pohon1,this.x,this.y,this.w,this.h);
+                                }
+                            }
+
+                            var Pohon3=new tree3();
+
+                            function tree4(){
+                                this.x=150, this.y=145, this.w=35,this.h=25;
+                                this.render=function(){
+                                    ctx1.drawImage(pohon1,this.x,this.y,this.w,this.h);
+                                }
+                            }
+
+                            var Pohon4=new tree4();
+
+                            function tree5(){
+                                this.x=200, this.y=145, this.w=35,this.h=25;
+                                this.render=function(){
+                                    ctx1.drawImage(pohon1,this.x,this.y,this.w,this.h);
+                                }
+                            }
+
+                            var Pohon5=new tree5();
+
+                            function tree6(){
+                                this.x=250, this.y=145, this.w=35,this.h=25;
+                                this.render=function(){
+                                    ctx1.drawImage(pohon1,this.x,this.y,this.w,this.h);
+                                }
+                            }
+
+                            var Pohon6=new tree6();
+
+                            function tree7(){
+                                this.x=220, this.y=145, this.w=35,this.h=25;
+                                this.render=function(){
+                                    ctx1.drawImage(pohon1,this.x,this.y,this.w,this.h);
+                                }
+                            }
+
+                            var Pohon7=new tree7();
+
+                            function tree7(){
+                                this.x=220, this.y=145, this.w=35,this.h=25;
+                                this.render=function(){
+                                    ctx1.drawImage(pohon1,this.x,this.y,this.w,this.h);
+                                }
+                            }
+
+                            var Pohon7=new tree7();
+
+                            function tree8(){
+                                this.x=300, this.y=145, this.w=35,this.h=25;
+                                this.render=function(){
+                                    ctx1.drawImage(pohon1,this.x,this.y,this.w,this.h);
+                                }
+                            }
+
+                            var Pohon8=new tree8();
+
+                            function tree9(){
+                                this.x=350, this.y=145, this.w=35,this.h=25;
+                                this.render=function(){
+                                    ctx1.drawImage(pohon1,this.x,this.y,this.w,this.h);
+                                }
+                            }
+
+                            var Pohon9=new tree9();
+
+                            function tree10(){
+                                this.x=400, this.y=145, this.w=35,this.h=25;
+                                this.render=function(){
+                                    ctx1.drawImage(pohon1,this.x,this.y,this.w,this.h);
+                                }
+                            }
+
+                            var Pohon10=new tree10();
+
+                            function tree11(){
+                                this.x=400, this.y=145, this.w=35,this.h=25;
+                                this.render=function(){
+                                    ctx1.drawImage(pohon1,this.x,this.y,this.w,this.h);
+                                }
+                            }
+
+                            var Pohon11=new tree11();
+
+                            function tree12(){
+                                this.x=450, this.y=145, this.w=35,this.h=25;
+                                this.render=function(){
+                                    ctx1.drawImage(pohon1,this.x,this.y,this.w,this.h);
+                                }
+                            }
+
+                            var Pohon12=new tree12();
+
+                            function tree13(){
+                                this.x=500, this.y=145, this.w=35,this.h=25;
+                                this.render=function(){
+                                    ctx1.drawImage(pohon1,this.x,this.y,this.w,this.h);
+                                }
+                            }
+
+                            var Pohon13=new tree13();
+
+                            function tree14(){
+                                this.x=550, this.y=145, this.w=35,this.h=25;
+                                this.render=function(){
+                                    ctx1.drawImage(pohon1,this.x,this.y,this.w,this.h);
+                                }
+                            }
+
+                            var Pohon14=new tree14();
+
+                            function tree15(){
+                                this.x=600, this.y=145, this.w=35,this.h=25;
+                                this.render=function(){
+                                    ctx1.drawImage(pohon1,this.x,this.y,this.w,this.h);
+                                }
+                            }
+
+                            var Pohon15=new tree15();
+
+                            function tree16(){
+                                this.x=650, this.y=145, this.w=35,this.h=25;
+                                this.render=function(){
+                                    ctx1.drawImage(pohon1,this.x,this.y,this.w,this.h);
+                                }
+                            }
+
+                            var Pohon16=new tree16();
+
+                            function tree17(){
+                                this.x=700, this.y=145, this.w=35,this.h=25;
+                                this.render=function(){
+                                    ctx1.drawImage(pohon1,this.x,this.y,this.w,this.h);
+                                }
+                            }
+
+                            var Pohon17=new tree17();
+
+                            function tree18(){
+                                this.x=750, this.y=145, this.w=35,this.h=25;
+                                this.render=function(){
+                                    ctx1.drawImage(pohon1,this.x,this.y,this.w,this.h);
+                                }
+                            }
+
+                            var Pohon18=new tree18();
+
+                            function tree19(){
+                                this.x=800, this.y=145, this.w=35,this.h=25;
+                                this.render=function(){
+                                    ctx1.drawImage(pohon1,this.x,this.y,this.w,this.h);
+                                }
+                            }
+
+                            var Pohon19=new tree19();
+
+                            function tree20(){
+                                this.x=850, this.y=145, this.w=35,this.h=25;
+                                this.render=function(){
+                                    ctx1.drawImage(pohon1,this.x,this.y,this.w,this.h);
+                                }
+                            }
+
+                            var Pohon20=new tree20();
+
+                            function Tree1(){
+                                this.x=607, this.y=10, this.w=35,this.h=20;
+                                this.render=function(){
+                                    ctx1.drawImage(pohon3,this.x,this.y,this.w,this.h);
+                                }
+                            }
+
+                            var Pohon21=new Tree1();
+
+                            function Tree2(){
+                                this.x=590, this.y=5, this.w=35,this.h=20;
+                                this.render=function(){
+                                    ctx1.drawImage(pohon3,this.x,this.y,this.w,this.h);
+                                }
+                            }
+
+                            var Pohon22=new Tree2();
+
+                            function Tree3(){
+                                this.x=490, this.y=7, this.w=35,this.h=20;
+                                this.render=function(){
+                                    ctx1.drawImage(pohon3,this.x,this.y,this.w,this.h);
+                                }
+                            }
+
+                            var Pohon23=new Tree3();
+
+                            function Tree4(){
+                                this.x=430, this.y=4, this.w=25,this.h=20;
+                                this.render=function(){
+                                    ctx1.drawImage(pohon3,this.x,this.y,this.w,this.h);
+                                }
+                            }
+
+                            var Pohon24=new Tree4();
+
+                            function Tree5(){
+                                this.x=440, this.y=10, this.w=25,this.h=20;
+                                this.render=function(){
+                                    ctx1.drawImage(pohon3,this.x,this.y,this.w,this.h);
+                                }
+                            }
+
+                            var Pohon25=new Tree5();
+
+                            function Tree6(){
+                                this.x=450, this.y=18, this.w=30,this.h=25;
+                                this.render=function(){
+                                    ctx1.drawImage(pohon3,this.x,this.y,this.w,this.h);
+                                }
+                            }
+
+                            var Pohon26=new Tree6();
+
+                            function Tree7(){
+                                this.x=460, this.y=23, this.w=30,this.h=20;
+                                this.render=function(){
+                                    ctx1.drawImage(pohon3,this.x,this.y,this.w,this.h);
+                                }
+                            }
+
+                            var Pohon27=new Tree7();
+
+                            function Tree8(){
+                                this.x=410, this.y=4, this.w=25,this.h=20;
+                                this.render=function(){
+                                    ctx1.drawImage(pohon3,this.x,this.y,this.w,this.h);
+                                }
+                            }
+
+                            var Pohon28=new Tree8();
+
+                            function Tree9(){
+                                this.x=380, this.y=4, this.w=25,this.h=20;
+                                this.render=function(){
+                                    ctx1.drawImage(pohon3,this.x,this.y,this.w,this.h);
+                                }
+                            }
+
+                            var Pohon29=new Tree9();
+
+                            function Tree10(){
+                                this.x=350, this.y=4, this.w=25,this.h=20;
+                                this.render=function(){
+                                    ctx1.drawImage(pohon3,this.x,this.y,this.w,this.h);
+                                }
+                            }
+
+                            var Pohon60=new Tree10();
+
+                            function Tree11(){
+                                this.x=178, this.y=4, this.w=25,this.h=20;
+                                this.render=function(){
+                                    ctx1.drawImage(pohon3,this.x,this.y,this.w,this.h);
+                                }
+                            }
+
+                            var Pohon61=new Tree11();
+
+                            function Tree12(){
+                                this.x=158, this.y=4, this.w=25,this.h=20;
+                                this.render=function(){
+                                    ctx1.drawImage(pohon3,this.x,this.y,this.w,this.h);
+                                }
+                            }
+
+                            var Pohon62=new Tree12();
+
+                            function Tree13(){
+                                this.x=140, this.y=4, this.w=25,this.h=20;
+                                this.render=function(){
+                                    ctx1.drawImage(pohon3,this.x,this.y,this.w,this.h);
+                                }
+                            }
+
+                            var Pohon63=new Tree13();
+
+                            function Tree14(){
+                                this.x=120, this.y=4, this.w=25,this.h=20;
+                                this.render=function(){
+                                    ctx1.drawImage(pohon3,this.x,this.y,this.w,this.h);
+                                }
+                            }
+
+                            var Pohon64=new Tree14();
+
+                            function Tree15(){
+                                this.x=100, this.y=4, this.w=25,this.h=20;
+                                this.render=function(){
+                                    ctx1.drawImage(pohon3,this.x,this.y,this.w,this.h);
+                                }
+                            }
+
+                            var Pohon65=new Tree15();
+
+                            function Tree16(){
+                                this.x=70, this.y=4, this.w=25,this.h=20;
+                                this.render=function(){
+                                    ctx1.drawImage(pohon3,this.x,this.y,this.w,this.h);
+                                }
+                            }
+
+                            var Pohon66=new Tree16();
+
+                            function Tree17(){
+                                this.x=45, this.y=4, this.w=25,this.h=20;
+                                this.render=function(){
+                                    ctx1.drawImage(pohon3,this.x,this.y,this.w,this.h);
+                                }
+                            }
+
+                            var Pohon67=new Tree17();
+
+                            function Tree18(){
+                                this.x=20, this.y=4, this.w=25,this.h=20;
+                                this.render=function(){
+                                    ctx1.drawImage(pohon3,this.x,this.y,this.w,this.h);
+                                }
+                            }
+
+                            var Pohon68=new Tree18();
+
+                             function Tree19(){
+                                this.x=463, this.y=5, this.w=30,this.h=20;
+                                this.render=function(){
+                                    ctx1.drawImage(pohon3,this.x,this.y,this.w,this.h);
+                                }
+                            }
+                            var Pohon69=new Tree19();
+
+                            function Tree20(){
+                                this.x=645, this.y=15, this.w=50,this.h=25;
+                                this.render=function(){
+                                    ctx1.drawImage(pohon3,this.x,this.y,this.w,this.h);
+                                }
+                            }
+                            var Pohon70=new Tree20();
+
+                            function Tree21(){
+                                this.x=720, this.y=7, this.w=55,this.h=30;
+                                this.render=function(){
+                                    ctx1.drawImage(pohon3,this.x,this.y,this.w,this.h);
+                                }
+                            }
+                            var Pohon71=new Tree21();
+
+                            function Tree22(){
+                                this.x=750, this.y=15, this.w=30,this.h=20;
+                                this.render=function(){
+                                    ctx1.drawImage(pohon3,this.x,this.y,this.w,this.h);
+                                }
+                            }
+                            var Pohon72=new Tree22();
+
+                            function Tree23(){
+                                this.x=760, this.y=5, this.w=25,this.h=15;
+                                this.render=function(){
+                                    ctx1.drawImage(pohon3,this.x,this.y,this.w,this.h);
+                                }
+                            }
+                            var Pohon73=new Tree23();
+
+                            function Tree24(){
+                                this.x=790, this.y=5, this.w=30,this.h=15;
+                                this.render=function(){
+                                    ctx1.drawImage(pohon3,this.x,this.y,this.w,this.h);
+                                }
+                            }
+                            var Pohon74=new Tree24();
+
+
+                            function TRee1(){
+                                this.x=100, this.y=95, this.w=30,this.h=20;
+                                this.render=function(){
+                                    ctx1.drawImage(pohon4,this.x,this.y,this.w,this.h);
+                                }
+                            }
+
+                            var Pohon30=new TRee1();
+
+                            function TRee2(){
+                                this.x=290, this.y=95, this.w=30,this.h=20;
+                                this.render=function(){
+                                    ctx1.drawImage(pohon4,this.x,this.y,this.w,this.h);
+                                }
+                            }
+
+                            var Pohon31=new TRee2();
+
+                            function TRee3(){
+                                this.x=310, this.y=95, this.w=30,this.h=20;
+                                this.render=function(){
+                                    ctx1.drawImage(pohon4,this.x,this.y,this.w,this.h);
+                                }
+                            }
+
+                            var Pohon32=new TRee3();
+
+                            function TRee4(){
+                                this.x=330, this.y=95, this.w=30,this.h=20;
+                                this.render=function(){
+                                    ctx1.drawImage(pohon4,this.x,this.y,this.w,this.h);
+                                }
+                            }
+
+                            var Pohon33=new TRee4();
+
+                            function TRee5(){
+                                this.x=500, this.y=80, this.w=30,this.h=20;
+                                this.render=function(){
+                                    ctx1.drawImage(pohon4,this.x,this.y,this.w,this.h);
+                                }
+                            }
+
+                            var Pohon34=new TRee5();
+
+                            function TRee6(){
+                                this.x=570, this.y=80, this.w=30,this.h=20;
+                                this.render=function(){
+                                    ctx1.drawImage(pohon4,this.x,this.y,this.w,this.h);
+                                }
+                            }
+
+                            var Pohon35=new TRee6();
+
+                            function TRee7(){
+                                this.x=590, this.y=80, this.w=30,this.h=20;
+                                this.render=function(){
+                                    ctx1.drawImage(pohon4,this.x,this.y,this.w,this.h);
+                                }
+                            }
+
+                            var Pohon36=new TRee7();
+
+                            function TRee8(){
+                                this.x=610, this.y=80, this.w=30,this.h=20;
+                                this.render=function(){
+                                    ctx1.drawImage(pohon4,this.x,this.y,this.w,this.h);
+                                }
+                            }
+
+                            var Pohon37=new TRee8();
+
+                            function TRee9(){
+                                this.x=630, this.y=85, this.w=35,this.h=30;
+                                this.render=function(){
+                                    ctx1.drawImage(pohon4,this.x,this.y,this.w,this.h);
+                                }
+                            }
+
+                            var Pohon38=new TRee9();
+
+                            function TRee10(){
+                                this.x=590, this.y=35, this.w=35,this.h=30;
+                                this.render=function(){
+                                    ctx1.drawImage(pohon4,this.x,this.y,this.w,this.h);
+                                }
+                            }
+
+                            var Pohon39=new TRee10();
+
+                            function TRee11(){
+                                this.x=770, this.y=30, this.w=40,this.h=35;
+                                this.render=function(){
+                                    ctx1.drawImage(pohon4,this.x,this.y,this.w,this.h);
+                                }
+                            }
+
+                            var Pohon40=new TRee11();
+
+                            function TRee12(){
+                                this.x=900, this.y=75, this.w=40,this.h=35;
+                                this.render=function(){
+                                    ctx1.drawImage(pohon4,this.x,this.y,this.w,this.h);
+                                }
+                            }
+
+                            var Pohon41=new TRee12();
+
+                            function TRee13(){
+                                this.x=925, this.y=79, this.w=45,this.h=40;
+                                this.render=function(){
+                                    ctx1.drawImage(pohon4,this.x,this.y,this.w,this.h);
+                                }
+                            }
+
+                            var Pohon42=new TRee13();
+
+                            function TRee14(){
+                                this.x=950, this.y=79, this.w=50,this.h=40;
+                                this.render=function(){
+                                    ctx1.drawImage(pohon4,this.x,this.y,this.w,this.h);
+                                }
+                            }
+
+                            var Pohon43=new TRee14();
+
+                            function TRee15(){
+                                this.x=980, this.y=76, this.w=50,this.h=40;
+                                this.render=function(){
+                                    ctx1.drawImage(pohon4,this.x,this.y,this.w,this.h);
+                                }
+                            }
+
+                            var Pohon44=new TRee15();
+
+                            function TREe1(){
+                                this.x=820, this.y=73, this.w=30,this.h=35;
+                                this.render=function(){
+                                    ctx1.drawImage(pohon5,this.x,this.y,this.w,this.h);
+                                }
+                            }
+
+                            var Pohon50=new TREe1();
+
+                            function TREe2(){
+                                this.x=840, this.y=73, this.w=30,this.h=35;
+                                this.render=function(){
+                                    ctx1.drawImage(pohon5,this.x,this.y,this.w,this.h);
+                                }
+                            }
+
+                            var Pohon51=new TREe2();
+
+                             function TREe3(){
+                                this.x=860, this.y=73, this.w=30,this.h=35;
+                                this.render=function(){
+                                    ctx1.drawImage(pohon5,this.x,this.y,this.w,this.h);
+                                }
+                            }
+
+                            var Pohon52=new TREe3();
+
+                            function TREe4(){
+                                this.x=880, this.y=73, this.w=30,this.h=35;
+                                this.render=function(){
+                                    ctx1.drawImage(pohon5,this.x,this.y,this.w,this.h);
+                                }
+                            }
+
+                            var Pohon53=new TREe4();
+
+                            function TREe5(){
+                                this.x=900, this.y=45, this.w=40,this.h=35;
+                                this.render=function(){
+                                    ctx1.drawImage(pohon5,this.x,this.y,this.w,this.h);
+                                }
+                            }
+
+                            var Pohon54=new TREe5();
+
+                            function TREe6(){
+                                this.x=920, this.y=45, this.w=40,this.h=35;
+                                this.render=function(){
+                                    ctx1.drawImage(pohon5,this.x,this.y,this.w,this.h);
+                                }
+                            }
+
+                            var Pohon55=new TREe6();
+
+                            function TREe7(){
+                                this.x=940, this.y=45, this.w=40,this.h=35;
+                                this.render=function(){
+                                    ctx1.drawImage(pohon5,this.x,this.y,this.w,this.h);
+                                }
+                            }
+
+                            var Pohon56=new TREe7();
+
+                            function TREe8(){
+                                this.x=960, this.y=45, this.w=40,this.h=35;
+                                this.render=function(){
+                                    ctx1.drawImage(pohon5,this.x,this.y,this.w,this.h);
+                                }
+                            }
+
+                            var Pohon57=new TREe8();
+
+                            function TREe9(){
+                                this.x=980, this.y=45, this.w=40,this.h=35;
+                                this.render=function(){
+                                    ctx1.drawImage(pohon5,this.x,this.y,this.w,this.h);
+                                }
+                            }
+
+                            var Pohon58=new TREe9();
+
+                            function animasi(){
+                                ctx1.save();
+                                ctx1.clearRect(0,0,cW,cH);
+                                
+                                
+                                mobil1.render(); 
+                                mobil2.render();   
+                                Pohon1.render();
+                                Pohon2.render(); 
+                                Pohon3.render();
+                                Pohon4.render();
+                                Pohon5.render(); 
+                                Pohon6.render(); 
+                                Pohon7.render(); 
+                                Pohon8.render(); 
+                                Pohon9.render(); 
+                                Pohon10.render();
+                                Pohon11.render(); 
+                                Pohon12.render(); 
+                                Pohon13.render();
+                                Pohon14.render();
+                                Pohon15.render();
+                                Pohon16.render();
+                                Pohon17.render();
+                                Pohon18.render();
+                                Pohon19.render();
+                                //pohon3
+                                Pohon20.render();  
+                                Pohon21.render();   
+                                Pohon22.render();
+                                Pohon23.render();
+                                Pohon24.render();
+                                Pohon25.render();
+                                Pohon26.render();
+                                Pohon27.render();
+                                Pohon28.render();
+                                Pohon29.render();
+                                //pohon 4
+                                Pohon30.render();
+                                Pohon31.render();
+                                Pohon32.render();
+                                Pohon33.render();   
+                                Pohon34.render();  
+                                Pohon35.render();
+                                Pohon36.render();  
+                                Pohon37.render();  
+                                Pohon38.render();
+                                Pohon39.render();
+                                Pohon40.render();
+                                Pohon41.render();
+                                Pohon42.render();
+                                Pohon43.render();
+                                Pohon44.render();
+                                //pohon 5
+                                Pohon50.render();
+                                Pohon51.render();
+                                Pohon52.render();
+                                Pohon53.render();
+                                Pohon54.render();
+                                Pohon55.render();
+                                Pohon56.render();
+                                Pohon57.render();
+                                Pohon58.render();
+                                //pohon 3.2
+                                Pohon60.render();
+                                Pohon61.render();
+                                Pohon62.render();
+                                Pohon63.render();
+                                Pohon64.render();
+                                Pohon65.render();
+                                Pohon66.render();
+                                Pohon67.render();
+                                Pohon68.render();
+                                Pohon69.render();
+                                Pohon70.render();
+                                Pohon71.render();
+                                Pohon72.render();
+                                Pohon73.render();
+                                Pohon74.render();
+
+                                ctx1.restore();
+                            }
+
+                            var interval = setInterval(animasi,30);
+                        }
+                 window.onload=aksikanvas;
+
+             //menjalankan fungsi pilihan arah
+            function myFunction(){
+            var pilih=document.getElementById("kendaraan");
+            var p= pilih.value;
+            var y = document.getElementById("Dari");
+            var d = y.value;
+            var x = document.getElementById("Tujuan");
+            var t = x.value;    
+            var tampilkan = document.getElementById("canvas1");
+            console.log('Nilai D = ' + d + '- Nilai T = ' + t);
+       
+        if (p == '1')
+            {
+                if(d == '1') {
+                    if (t == '1'){
+                        tampilkan.style.animation='driPintuMasukkejustinusDpn 9s infinite';   
+                        document.getElementById("cetak").innerHTML = "Jalan kaki Dari Gerbang Masuk Menuju Justinus";
+                    }
+                    else if (t == '2'){
+                        tampilkan.style.animation='drPintuMasukkeAlbertus 9s infinite';
+                        document.getElementById("cetak").innerHTML = "Jalan kaki Dari Gerbang Masuk Menuju Albertus";
+                    }
+                     else if (t == '3'){
+                        tampilkan.style.animation='drPintuMasukkeTa 9s infinite';
+                        document.getElementById("cetak").innerHTML = "Jalan kaki Dari Gerbang Masuk Menuju Thomas Aquinas";
+                    }
+                     else if (t == '4'){
+                        tampilkan.style.animation='drPintuMasukkeMichael 9s infinite';
+                        document.getElementById("cetak").innerHTML = "Jalan kaki Dari Gerbang Masuk Menuju Michael";
+                    }
+                     else if (t == '5'){
+                        tampilkan.style.animation='drPintuMasukkeAntonius 9s infinite';
+                        document.getElementById("cetak").innerHTML = "Jalan kaki Dari Gerbang Masuk Menuju Antonius";
+                    }
+                     else if (t == '6'){
+                        tampilkan.style.animation='driPintuMasukkeHc 9s infinite';
+                        document.getElementById("cetak").innerHTML = "Jalan kaki Dari Gerbang Masuk Menuju Henricus Constan";
+                    }
+                     else if (t == '7'){
+                        tampilkan.style.animation='driPintuMasukkesporthall 9s infinite';
+                        document.getElementById("cetak").innerHTML = "Jalan kaki Dari Gerbang Masuk Menuju Henricus Constan";
+                    }
+                    else{
+                        tampilkan.style.animation='drPintuMasukkeBMSI 9s infinite';
+                        document.getElementById("cetak").innerHTML = "Jalan kaki Dari Gerbang Masuk Menuju BMSI";
+                    }
+                }else if(d == '2'){
+                    if (t == '1'){
+                        tampilkan.style.animation='';
+                        alert("Anda Berada Di Gedung Justinus");   
+                        document.getElementById("cetak").innerHTML = "Anda Berada Di Gd Justinus";
+                    }
+                    else if (t == '2'){
+                        tampilkan.style.animation='drGdJustinkeAlbertus 9s infinite';
+                        document.getElementById("cetak").innerHTML = "Jalan kaki Dari Gd Justinus Menuju Albertus";
+                    }
+                     else if (t == '3'){
+                        tampilkan.style.animation='drGdJustinkeTa 9s infinite';
+                        document.getElementById("cetak").innerHTML = "Jalan kaki Dari Gd Justinus Menuju Thomas Aquinas";
+                    }
+                     else if (t == '4'){
+                        tampilkan.style.animation='drGdJustinuskeMichael 9s infinite';
+                        document.getElementById("cetak").innerHTML = "Jalan kaki Dari Gd Justinus Menuju Michael";
+                    }
+                     else if (t == '5'){
+                        tampilkan.style.animation='drGdJustinuskeAntonius 9s infinite';
+                        document.getElementById("cetak").innerHTML = "Jalan kaki Dari Gd Justinus Menuju Antonius";
+                    }
+                     else if (t == '6'){
+                        tampilkan.style.animation='drGdJustinkeHc 9s infinite';
+                        document.getElementById("cetak").innerHTML = "Jalan kaki Dari Gd Justinus Menuju Henricus Constan";
+                    }
+                     else if (t == '7'){
+                        tampilkan.style.animation='drGdJustinkesporthall 9s infinite';
+                        document.getElementById("cetak").innerHTML = "Jalan kaki Dari Gd Justinus Menuju Henricus Constan";
+                    }
+                    else{
+                        tampilkan.style.animation='drGdJustinuskeBMSI 9s infinite';
+                        document.getElementById("cetak").innerHTML = "Jalan kaki Dari Gd Justinus Menuju BMSI";
+                    }
+                }else if(d == '3'){
+                    if (t == '1'){
+                        tampilkan.style.animation='drGdAlbertuskeJustinus 9s infinite';
+                        document.getElementById("cetak").innerHTML = "Jalan kaki Dari Gd Albertus Menuju Justinus";   
+                    }
+                    else if (t == '2'){
+                        tampilkan.style.animation='';
+                        alert("Anda Berada Di Gedung Albertus");
+                        document.getElementById("cetak").innerHTML = "Anda Berada Di Gd Albertus";
+                    }
+                     else if (t == '3'){
+                        tampilkan.style.animation='drGdAlbertuskeTa 9s infinite';
+                        document.getElementById("cetak").innerHTML = "Jalan kaki Dari Gd Albertus Menuju Thomas Aquinas";
+                    }
+                     else if (t == '4'){
+                        tampilkan.style.animation='drGdAlbertuskeMichael 9s infinite';
+                        document.getElementById("cetak").innerHTML = "Jalan kaki Dari Gd Albertus Menuju Michael";
+                    }
+                     else if (t == '5'){
+                        tampilkan.style.animation='drGdAlbertuskeAntonius 9s infinite';
+                        document.getElementById("cetak").innerHTML = "Jalan kaki Dari Gd Albertus Menuju Antonius";
+                    }
+                     else if (t == '6'){
+                        tampilkan.style.animation='drGdAlbertuskeHc 9s infinite';
+                        document.getElementById("cetak").innerHTML = "Jalan kaki Dari Gd Albertus Menuju Henricus Constan";
+                    }
+                    else if (t == '7'){
+                        tampilkan.style.animation='drGdAlbertuskesporthall 9s infinite';
+                        document.getElementById("cetak").innerHTML = "Jalan kaki Dari Gd Albertus Menuju Henricus Constan";
+                    }
+                    else{
+                        tampilkan.style.animation='drGdAlbertuskeBMSI 9s infinite';
+                        document.getElementById("cetak").innerHTML = "Jalan kaki Dari Gd Albertus Menuju SportHall";
+                    }
+                }else if(d == '4'){
+                    if (t == '1'){
+                        tampilkan.style.animation='driGdTakeJustinusSamping 9s infinite';
+                        document.getElementById("cetak").innerHTML = "Jalan kaki Dari Gd Thomas Aquinas Menuju Justinus";   
+                    }
+                    else if (t == '2'){
+                        tampilkan.style.animation='driGdTakeAlbertus 9s infinite';
+                        document.getElementById("cetak").innerHTML = "Jalan kaki Dari Gd Thomas Aquinas Menuju Albertus";
+                    }
+                     else if (t == '3'){
+                        tampilkan.style.animation='';
+                        alert("Anda Berada Di Gedung Thomas Aquinas");
+                        document.getElementById("cetak").innerHTML = "Anda Berada Di Gd Thomas Aquinas";
+                    }
+                     else if (t == '4'){
+                        tampilkan.style.animation='driGdTakeMichael 9s infinite';
+                        document.getElementById("cetak").innerHTML = "Jalan kaki Dari Gd Thomas Aquinas Menuju Michael";
+                    }
+                     else if (t == '5'){
+                        tampilkan.style.animation='driGdTakeAntonius 9s infinite';
+                        document.getElementById("cetak").innerHTML = "Jalan kaki Dari Gd Thomas Aquinas Menuju Antonius";
+                    }
+                     else if (t == '6'){
+                        tampilkan.style.animation='driGdTakeHc 9s infinite';
+                        document.getElementById("cetak").innerHTML = "Jalan kaki Dari Gd Thomas Aquinas Menuju Henricus Constan";
+                    }
+                    else if (t == '7'){
+                        tampilkan.style.animation='driGdTakesporthall 9s infinite';
+                        document.getElementById("cetak").innerHTML = "Jalan kaki Dari Gd Thomas Aquinas Menuju Henricus Constan";
+                    }
+                    else{
+                        tampilkan.style.animation='driGdTakeBMSI 9s infinite';
+                        document.getElementById("cetak").innerHTML = "Jalan kaki Dari Gd Thomas Aquinas Menuju SportHall";
+                    }
+                }else if(d == '5'){
+                    if (t == '1'){
+                        tampilkan.style.animation='drGdMichaelkeJustinus 9s infinite'; 
+                        document.getElementById("cetak").innerHTML = "Jalan kaki Dari Gd Michael Menuju Justinus";  
+                    }
+                    else if (t == '2'){
+                        tampilkan.style.animation='drGdMichaelkeAlbertus 9s infinite';
+                        document.getElementById("cetak").innerHTML = "Jalan kaki Dari Gd Michael Menuju Albertus";
+                    }
+                     else if (t == '3'){
+                        tampilkan.style.animation='drGdMichaelkeTa 9s infinite';
+                        document.getElementById("cetak").innerHTML = "Jalan kaki Dari Gd Michael Menuju Thomas Aquinas";
+                    }
+                     else if (t == '4'){
+                        tampilkan.style.animation='';
+                        alert("Anda Berada Di Gedung Michael");
+                        document.getElementById("cetak").innerHTML = "Jalan kaki Dari Gd Michael Menuju Michael";
+                    }
+                     else if (t == '5'){
+                        tampilkan.style.animation='drGdMichaelkeAntonius 9s infinite';
+                        document.getElementById("cetak").innerHTML = "Jalan kaki Dari Gd Michael Menuju Antonius";
+                    }
+                     else if (t == '6'){
+                        tampilkan.style.animation='drGdMichaelkeHc 9s infinite';
+                        document.getElementById("cetak").innerHTML = "Jalan kaki Dari Gd Michael Menuju Henricus Constan";
+                    }
+                     else if (t == '7'){
+                        tampilkan.style.animation='drGdMichaelkesporthall 9s infinite';
+                        document.getElementById("cetak").innerHTML = "Jalan kaki Dari Gd Michael Menuju Henricus Constan";
+                    }
+                    else{
+                        tampilkan.style.animation='drGdMichaelkeBMSI 9s infinite';
+                        document.getElementById("cetak").innerHTML = "Jalan kaki Dari Gd Michael Menuju SportHall";
+                    } 
+                }else if(d == '6'){
+                    if (t == '1'){
+                        tampilkan.style.animation='driAntoniuskeJustinus 9s infinite'; 
+                        document.getElementById("cetak").innerHTML = "Jalan kaki Dari Gd Antonius Menuju Justinus";  
+                    }
+                    else if (t == '2'){
+                        tampilkan.style.animation='driAntoniuskeAlbertus 9s infinite';
+                        document.getElementById("cetak").innerHTML = "Jalan kaki Dari Gd Antonius Menuju Albertus";
+                    }
+                     else if (t == '3'){
+                        tampilkan.style.animation='driAntoniuskeTa 9s infinite';
+                        document.getElementById("cetak").innerHTML = "Jalan kaki Dari Gd Antonius Menuju Thomas Aquinas";
+                    }
+                     else if (t == '4'){
+                        tampilkan.style.animation='driAntoniuskeMichael 9s infinite';
+                        document.getElementById("cetak").innerHTML = "Jalan kaki Dari Gd Antonius Menuju Michael";
+                    }
+                     else if (t == '5'){
+                        tampilkan.style.animation='';
+                        alert("Anda Berada Di Gedung Antonius ");
+                        document.getElementById("cetak").innerHTML = "Anda Berada Di Gd Antonius";
+                    }
+                     else if (t == '6'){
+                        tampilkan.style.animation='driAntoniuskeHc 9s infinite';
+                        document.getElementById("cetak").innerHTML = "Jalan kaki Dari Gd Antonius Menuju Henricus Constan";
+                    }
+                     else if (t == '7'){
+                        tampilkan.style.animation='driAntoniuskesporthall 9s infinite';
+                        document.getElementById("cetak").innerHTML = "Jalan kaki Dari Gd Antonius Menuju Henricus Constan";
+                    }
+                    else{
+                        tampilkan.style.animation='driAntoniuskeBMSI 9s infinite';
+                        document.getElementById("cetak").innerHTML = "Jalan kaki Dari Gd Antonius Menuju sporthall";
+                    }
+                }else if(d == '7'){
+                    if (t == '1'){
+                        tampilkan.style.animation='drHckeJustinus 9s infinite';  
+                        document.getElementById("cetak").innerHTML = "Jalan kaki Dari Gd Henricus Constan Menuju Albertus"; 
+                    }
+                    else if (t == '2'){
+                        tampilkan.style.animation='drHckeAlbertus 9s infinite';
+                        document.getElementById("cetak").innerHTML = "Jalan kaki Dari Gd Henricus Constan Menuju Albertus";
+                    }
+                     else if (t == '3'){
+                        tampilkan.style.animation='drHckeTa 9s infinite';
+                        document.getElementById("cetak").innerHTML = "Jalan kaki Dari Gd Henricus Constan Menuju Thomas Aquinas";
+                    }
+                     else if (t == '4'){
+                        tampilkan.style.animation='drHckeMichael 9s infinite';
+                        document.getElementById("cetak").innerHTML = "Jalan kaki Dari Gd Henricus Constan Menuju Michael";
+                    }
+                     else if (t == '5'){
+                        tampilkan.style.animation='drHckeAntonius 9s infinite';
+                        document.getElementById("cetak").innerHTML = "Jalan kaki Dari Gd Henricus Constan Menuju Antonius";
+                    }
+                     else if (t == '6'){
+                        tampilkan.style.animation='';
+                        alert("Anda Berada Di Gedung Henricus Constan");
+                        document.getElementById("cetak").innerHTML = "Anda Berada Di Gd Henricus Constan";
+                    }
+                    else if (t == '7'){
+                        tampilkan.style.animation='drHckesporthall 9s infinite';
+                        document.getElementById("cetak").innerHTML = "Anda Berada Di Gd Henricus Constan";
+                    }
+                    else{
+                        tampilkan.style.animation='drHckeBMSI 9s infinite';
+                        document.getElementById("cetak").innerHTML = "Jalan kaki Dari Gd Henricus Constan Menuju SportHall";
+                    } 
+                }else{
+                    if (t == '1'){
+                        tampilkan.style.animation='drBMSIkejustinus 9s infinite';  
+                        document.getElementById("cetak").innerHTML = "Jalan kaki Dari BMSI Menuju Albertus"; 
+                    }
+                    else if (t == '2'){
+                        tampilkan.style.animation='drBMSIkeAlbertus 10s infinite';
+                        document.getElementById("cetak").innerHTML = "Jalan kaki Dari BMSI Menuju Albertus";
+                    }
+                     else if (t == '3'){
+                        tampilkan.style.animation='drBMSIkeTa 10s infinite';
+                        document.getElementById("cetak").innerHTML = "Jalan kaki Dari BMSI Menuju Thomas Aquinas";
+                    }
+                     else if (t == '4'){
+                        tampilkan.style.animation='drBMSIkeMichael 10s infinite';
+                        document.getElementById("cetak").innerHTML = "Jalan kaki Dari BMSI Menuju Michael";
+                    }
+                     else if (t == '5'){
+                        tampilkan.style.animation='drBMSIkeAntonius 10s infinite';
+                        document.getElementById("cetak").innerHTML = "Jalan kaki Dari BMSI Menuju Antonius";
+                    }
+                     else if (t == '6'){
+                        tampilkan.style.animation='drBMSIkeHc 10s infinite';
+                        document.getElementById("cetak").innerHTML = "Jalan kaki Dari BMSI Menuju Henricus Constan";
+                    }
+                    else if (t == '7'){
+                        tampilkan.style.animation='drBMSIkesporthall 9s infinite';
+                        document.getElementById("cetak").innerHTML = "Anda Berada Di Gd Henricus Constan";
+                    }
+                    else{
+                        tampilkan.style.animation='';
+                        alert("Anda Berada Di Gedung BMSI");
+                        document.getElementById("cetak").innerHTML = "Anda Berada Di Gd BMSI";
+                    }         
+                }
+        }
+        else{
+                if(d == '1') {
+                    if (t == '1'){
+                        tampilkan.style.animation='driPintuMasukkejustinusDpnnaikmobil 9s infinite';   
+                        document.getElementById("cetak").innerHTML = "Naik Kendaraan Dari Gerbang Masuk Menuju Justinus";
+                    }
+                    else if (t == '2'){
+                        tampilkan.style.animation='drPintuMasukkeAlbertusnaikmobil 9s infinite';
+                        document.getElementById("cetak").innerHTML = "Naik Kendaraan Dari Gerbang Masuk Menuju Albertus";
+                    }
+                     else if (t == '3'){
+                        tampilkan.style.animation='drPintuMasukkeTanaikmobil 9s infinite';
+                        document.getElementById("cetak").innerHTML = "Naik Kendaraan Dari Gerbang Masuk Menuju Thomas Aquinas";
+                    }
+                     else if (t == '4'){
+                        tampilkan.style.animation='drPintuMasukkeMichaelnaikmobil 9s infinite';
+                        document.getElementById("cetak").innerHTML = "Naik Kendaraan Dari Gerbang Masuk Menuju Michael";
+                    }
+                     else if (t == '5'){
+                        tampilkan.style.animation='drPintuMasukkeAntoniusnaikmobil 9s infinite';
+                        document.getElementById("cetak").innerHTML = "Naik Kendaraan Dari Gerbang Masuk Menuju Antonius";
+                    }
+                     else if (t == '6'){
+                        tampilkan.style.animation='driPintuMasukkeHcnaikmobil 9s infinite';
+                        document.getElementById("cetak").innerHTML = "Naik Kendaraan Dari Gerbang Masuk Menuju Henricus Constan";
+                    }
+                    else if (t == '7'){
+                        tampilkan.style.animation='driPintuMasukkesporthallnaikmobil 10s infinite';
+                        document.getElementById("cetak").innerHTML = "Naik Kendaraan Dari Gerbang Masuk Menuju SportHall";
+                    }
+                    else{
+                        tampilkan.style.animation='';
+                        alert("BUKAN JALUR KENDARAAN!!");
+                        document.getElementById("cetak").innerHTML = "BUKAN JALUR KENDARAAN!!";
+                    }
+                }else if(d == '2'){
+                    if (t == '1'){
+                        tampilkan.style.animation='';
+                        alert("Anda Berada Di Gedung Justinus");
+                        document.getElementById("cetak").innerHTML = "Anda Berada Di Gedung Justinus";    
+                    }
+                    else if (t == '2'){
+                        tampilkan.style.animation='drGdJustinkeAlbertusnaikmobil 9s infinite';
+                        document.getElementById("cetak").innerHTML = "Naik Kendaraan Dari Justinus Menuju Albertus";
+                    }
+                     else if (t == '3'){
+                        tampilkan.style.animation='drGdJustinkeTanaikmobil 9s infinite';
+                        document.getElementById("cetak").innerHTML = "Naik Kendaraan Dari Justinus Menuju Thomas Aquinas";
+                    }
+                     else if (t == '4'){
+                        tampilkan.style.animation='drGdJustinuskeMichaelnaikmobil 9s infinite';
+                        document.getElementById("cetak").innerHTML = "Naik Kendaraan Dari Justinus Menuju Michael";
+                    }
+                     else if (t == '5'){
+                        tampilkan.style.animation='drGdJustinuskeAntoniusnaikmobil 9s infinite';
+                        document.getElementById("cetak").innerHTML = "Naik Kendaraan Dari Justinus Menuju Antonius";
+                    }
+                     else if (t == '6'){
+                        tampilkan.style.animation='drGdJustinkeHcnaikmobil 9s infinite';
+                        document.getElementById("cetak").innerHTML = "Naik Kendaraan Dari Justinus Menuju Henricus Constan";
+                    }
+                    else if (t == '7'){
+                        tampilkan.style.animation='drGdJustinkesporthallnaikmobil 9s infinite';
+                        document.getElementById("cetak").innerHTML = "Naik Kendaraan Dari Justinus Menuju SportHall";
+                    }
+                    else{
+                        tampilkan.style.animation='';
+                        alert("BUKAN JALUR KENDARAAN!!");
+                        document.getElementById("cetak").innerHTML = "BUKAN JALUR KENDARAAN!!";
+                    }
+                }else if(d == '3'){
+                    if (t == '1'){
+                        tampilkan.style.animation='';
+                        alert("SATU ARAH!!!");
+                        document.getElementById("cetak").innerHTML = "SATU ARAH! sihlakan keluar dari kampus terlebih dahulu lalu masuk kembali ke gerbang utama";  
+                    }
+                    else if (t == '2'){
+                        tampilkan.style.animation='';
+                        alert("Anda Berada Di Gedung Albertus");
+                        document.getElementById("cetak").innerHTML = "Anda Berada Di Gedung Albertus"; 
+                    }
+                     else if (t == '3'){
+                        tampilkan.style.animation='drGdAlbertuskeTanaikmobil 9s infinite';
+                        document.getElementById("cetak").innerHTML = "Naik Kendaraan Dari Albertus Menuju Thomas Aquinas";
+                    }
+                     else if (t == '4'){
+                        tampilkan.style.animation='drGdAlbertuskeMichaelnaikmobil 9s infinite';
+                        document.getElementById("cetak").innerHTML = "Naik Kendaraan Dari Albertus Menuju Michael";
+                    }
+                     else if (t == '5'){
+                        tampilkan.style.animation='drGdAlbertuskeAntoniusnaikmobil 9s infinite';
+                        document.getElementById("cetak").innerHTML = "Naik Kendaraan Dari Albertus Menuju Antonius";
+                    }
+                     else if (t == '6'){
+                        tampilkan.style.animation='drGdAlbertuskeHcnaikmobil 9s infinite';
+                        document.getElementById("cetak").innerHTML = "Naik Kendaraan Dari Albertus Menuju Henricus Constan";
+                    }
+                    else if (t == '7'){
+                       tampilkan.style.animation='drGdAlbertuskesporthall 9s infinite';
+                        document.getElementById("cetak").innerHTML = "Naik Kendaraan Dari Albertus Menuju SportHall";
+                    }
+                    else{
+                        tampilkan.style.animation='';
+                        alert("BUKAN JALUR KENDARAAN!!");
+                        document.getElementById("cetak").innerHTML = "BUKAN JALUR KENDARAAN!!"; 
+                    }
+                }else if(d == '4'){
+                    if (t == '1'){
+                        tampilkan.style.animation='';
+                        alert("SATU ARAH!!!");
+                        document.getElementById("cetak").innerHTML = "SATU ARAH! sihlakan keluar dari kampus terlebih dahulu lalu masuk kembali ke gerbang utama";     
+                    }
+                    else if (t == '2'){
+                        tampilkan.style.animation='';
+                        alert("SATU ARAH!!!");
+                        document.getElementById("cetak").innerHTML = "SATU ARAH! sihlakan keluar dari kampus terlebih dahulu lalu masuk kembali ke gerbang utama";  
+                    }
+                     else if (t == '3'){
+                        tampilkan.style.animation='';
+                        alert("Anda Berada Di Gedung Thomas Aquinas");
+                        document.getElementById("cetak").innerHTML = "Anda Berada Di Gedung Thomas Aquinas"; 
+                    }
+                     else if (t == '4'){
+                        tampilkan.style.animation='driGdTakeMichaelnaikmobil 9s infinite';
+                        document.getElementById("cetak").innerHTML = "Naik Kendaraan Dari Thomas Aquinas Menuju Michael";
+                    }
+                     else if (t == '5'){
+                        tampilkan.style.animation='driGdTakeAntoniusnaikmobil 9s infinite';
+                        document.getElementById("cetak").innerHTML = "Naik Kendaraan Dari Thomas Aquinas Menuju Antonius";
+                    }
+                     else if (t == '6'){
+                        tampilkan.style.animation='driGdTakeHcnaikmobil 9s infinite';
+                        document.getElementById("cetak").innerHTML = "Naik Kendaraan Dari Thomas Aquinas Menuju Henricus Constan"; 
+                    }
+                    else if (t == '7'){
+                       tampilkan.style.animation='driGdTakesporthallnaikmobil 9s infinite';
+                        document.getElementById("cetak").innerHTML = "Naik Kendaraan Dari Thomas Aquinas Menuju SportHall";
+                    }
+                    else{
+                        tampilkan.style.animation='';
+                        alert("BUKAN JALUR KENDARAAN!!");
+                        document.getElementById("cetak").innerHTML = "BUKAN JALUR KENDARAAN!!"; 
+                    }
+                }else if(d == '5'){
+                    if (t == '1'){
+                        tampilkan.style.animation='';
+                        alert("SATU ARAH!!!");
+                        document.getElementById("cetak").innerHTML = "SATU ARAH! sihlakan keluar dari kampus terlebih dahulu lalu masuk kembali ke gerbang utama";     
+                    }
+                    else if (t == '2'){
+                        tampilkan.style.animation='';
+                        alert("SATU ARAH!!!");
+                        document.getElementById("cetak").innerHTML = "SATU ARAH! sihlakan keluar dari kampus terlebih dahulu lalu masuk kembali ke gerbang utama";  
+                    }
+                     else if (t == '3'){
+                        tampilkan.style.animation='';
+                        alert("SATU ARAH!!!");
+                        document.getElementById("cetak").innerHTML = "SATU ARAH! sihlakan keluar dari kampus terlebih dahulu lalu masuk kembali ke gerbang utama";  
+                    }
+                     else if (t == '4'){
+                        tampilkan.style.animation='';
+                        alert("Anda Berada Di Gedung Michael");
+                        document.getElementById("cetak").innerHTML = "Anda Berada Di Gedung Michael"; 
+                    }
+                     else if (t == '5'){
+                        tampilkan.style.animation='drGdMichaelkeAntoniusnaikmobil 9s infinite';
+                        document.getElementById("cetak").innerHTML = "Naik Kendaraan Dari Michael Menuju Antonius"; 
+                    }
+                     else if (t == '6'){
+                        tampilkan.style.animation='drGdMichaelkeHcnaikmobil 9s infinite';
+                        document.getElementById("cetak").innerHTML = "Naik Kendaraan Dari Michael Menuju Henricus Constan"; 
+                    }
+                    else if (t == '7'){
+                        tampilkan.style.animation='drGdMichaelkesporthallnaikmobil 9s infinite';
+                        document.getElementById("cetak").innerHTML = "Naik Kendaraan Dari Michael Menuju SportHall";  
+                    }
+                    else{
+                        tampilkan.style.animation='';
+                        alert("BUKAN JALUR KENDARAAN!!");
+                        document.getElementById("cetak").innerHTML = "BUKAN JALUR KENDARAAN!!";
+                    } 
+                }else if(d == '6'){
+                    if (t == '1'){
+                        tampilkan.style.animation='';
+                        alert("SATU ARAH!!!");
+                        document.getElementById("cetak").innerHTML = "SATU ARAH! sihlakan keluar dari kampus terlebih dahulu lalu masuk kembali ke gerbang utama";     
+                    }
+                    else if (t == '2'){
+                        tampilkan.style.animation='';
+                        alert("SATU ARAH!!!");
+                        document.getElementById("cetak").innerHTML = "SATU ARAH! sihlakan keluar dari kampus terlebih dahulu lalu masuk kembali ke gerbang utama";  
+                    }
+                     else if (t == '3'){
+                        tampilkan.style.animation='';
+                        alert("SATU ARAH!!!");
+                        document.getElementById("cetak").innerHTML = "SATU ARAH! sihlakan keluar dari kampus terlebih dahulu lalu masuk kembali ke gerbang utama";  
+                    }
+                     else if (t == '4'){
+                        tampilkan.style.animation='';
+                        alert("SATU ARAH!!!");
+                        document.getElementById("cetak").innerHTML = "SATU ARAH! sihlakan keluar dari kampus terlebih dahulu lalu masuk kembali ke gerbang utama";  
+                    }
+                     else if (t == '5'){
+                        tampilkan.style.animation='';
+                        alert("Anda Berada Di Gedung Antonius ");
+                        document.getElementById("cetak").innerHTML = "Anda Berada Di Gedung Antonius"; 
+                    }
+                     else if (t == '6'){
+                        tampilkan.style.animation='driAntoniuskeHcnaikmobil 9s infinite';
+                        document.getElementById("cetak").innerHTML = "Naik Kendaraan Dari Antonius Menuju Henricus Constan"; 
+                    }
+                    else if (t == '7'){
+                        tampilkan.style.animation='driAntoniuskesporthallnaikmobil 9s infinite';
+                        document.getElementById("cetak").innerHTML = "Naik Kendaraan Dari Antonius Menuju SportHall";  
+                    }
+                    else{
+                        tampilkan.style.animation='';
+                        alert("BUKAN JALUR KENDARAAN!!");
+                        document.getElementById("cetak").innerHTML = "BUKAN JALUR KENDARAAN!!";  
+                    }
+                }else if(d == '7'){
+                    if (t == '1'){
+                        tampilkan.style.animation='';
+                        alert("SATU ARAH!!!");
+                        document.getElementById("cetak").innerHTML = "SATU ARAH! sihlakan keluar dari kampus terlebih dahulu lalu masuk kembali ke gerbang utama";     
+                    }
+                    else if (t == '2'){
+                        tampilkan.style.animation='';
+                        alert("SATU ARAH!!!");
+                        document.getElementById("cetak").innerHTML = "SATU ARAH! sihlakan keluar dari kampus terlebih dahulu lalu masuk kembali ke gerbang utama";  
+                    }
+                     else if (t == '3'){
+                        tampilkan.style.animation='';
+                        alert("SATU ARAH!!!");
+                        document.getElementById("cetak").innerHTML = "SATU ARAH! sihlakan keluar dari kampus terlebih dahulu lalu masuk kembali ke gerbang utama";  
+                    }
+                     else if (t == '4'){
+                        tampilkan.style.animation='';
+                        alert("SATU ARAH!!!");
+                        document.getElementById("cetak").innerHTML = "SATU ARAH! sihlakan keluar dari kampus terlebih dahulu lalu masuk kembali ke gerbang utama";  
+                    }
+                     else if (t == '5'){
+                        tampilkan.style.animation='';
+                        alert("SATU ARAH!!!");
+                        document.getElementById("cetak").innerHTML = "SATU ARAH! sihlakan keluar dari kampus terlebih dahulu lalu masuk kembali ke gerbang utama";  
+                    }
+                     else if (t == '6'){
+                        tampilkan.style.animation='';
+                        alert("Anda Berada Di Gedung Henricus Constan");
+                        document.getElementById("cetak").innerHTML = "Anda Berada Di Gedung Henricus Constan"; 
+                    }
+                     else if (t == '7'){
+                       tampilkan.style.animation='drHckesporthallnaikmobil 9s infinite';
+                        document.getElementById("cetak").innerHTML = "Naik Kendaraan Dari Henricus Constan Menuju SportHall"; 
+                    }
+                    else{
+                        tampilkan.style.animation='';
+                        alert("BUKAN JALUR KENDARAAN!!");
+                        document.getElementById("cetak").innerHTML = "BUKAN JALUR KENDARAAN!!";  
+                    }  
+                }else{
+                    if (t == '1'){
+                        tampilkan.style.animation='';
+                        alert("BUKAN JALUR KENDARAAN!!");
+                        document.getElementById("cetak").innerHTML = "BUKAN JALUR KENDARAAN!!";     
+                    }
+                    else if (t == '2'){
+                        tampilkan.style.animation='';
+                        alert("BUKAN JALUR KENDARAAN!!");
+                        document.getElementById("cetak").innerHTML = "BUKAN JALUR KENDARAAN!!";   
+                    }
+                     else if (t == '3'){
+                        tampilkan.style.animation='';
+                        alert("BUKAN JALUR KENDARAAN!!");
+                        document.getElementById("cetak").innerHTML = "BUKAN JALUR KENDARAAN!!";   
+                    }
+                     else if (t == '4'){
+                        tampilkan.style.animation='';
+                        alert("BUKAN JALUR KENDARAAN!!");
+                        document.getElementById("cetak").innerHTML = "BUKAN JALUR KENDARAAN!!";   
+                    }
+                     else if (t == '5'){
+                        tampilkan.style.animation='';
+                        alert("BUKAN JALUR KENDARAAN!!");
+                        document.getElementById("cetak").innerHTML = "BUKAN JALUR KENDARAAN!!";   
+                    }
+                     else if (t == '6'){
+                        tampilkan.style.animation='';
+                        alert("BUKAN JALUR KENDARAAN!!");
+                        document.getElementById("cetak").innerHTML = "BUKAN JALUR KENDARAAN!!";  
+                    }
+                    else{
+                        tampilkan.style.animation='';
+                        alert("BUKAN JALUR KENDARAAN!!");
+                        document.getElementById("cetak").innerHTML = "BUKAN JALUR KENDARAAN!!";  
+                    }         
+                }
+           }    
+        }
+            
+
+            
+
+            //jalan TOLL
+            ctx.beginPath();
+            ctx.moveTo(0,170);
+            ctx.lineTo(1200,170);
+            ctx.font ="12px Arial";
+            ctx.fillText("Jl. Tol Jatingaleh-Krapyak",100,190);
+            ctx.font ="12px Arial";
+            ctx.fillText("Jl. Tol Jatingaleh-Krapyak",700,190);
+            ctx.stroke();
+
+            //jalan masuk unikat termasuk dengan garis luar dekat TOLL
+            ctx.beginPath(); // mulai menggmabar
+            ctx.moveTo(0,10);
+            ctx.lineTo(5,10);
+            ctx.lineTo(5,145);
+            ctx.lineTo(105,145);
+            ctx.lineTo(1200,145);
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.moveTo(25,10);
+            ctx.lineTo(85,10);
+            ctx.stroke();
+
+            //Jalan Raya
+            ctx.beginPath();
+            ctx.moveTo(105,10);
+            ctx.lineTo(225,10);
+            ctx.font ="10px Arial";
+            ctx.fillText("Jl. Pawiyatan Luhur",30,8);
+            ctx.fillText("Jl. Pawiyatan Luhur",400,8);
+            ctx.fillText("Jl. Pawiyatan Luhur",800,8);
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.moveTo(25,10);
+            ctx.lineTo(25,90);
+            ctx.stroke();
+
+            //pintu masuk gedung justinus
+            ctx.beginPath();
+            ctx.moveTo(25,90);
+            ctx.lineTo(45,90);
+            ctx.lineTo(53,85);
+            //pintu masuk dari parkir motor
+            ctx.moveTo(58,85);
+            ctx.lineTo(65,90);
+            ctx.lineTo(85,90);
+            ctx.lineTo(85,50);
+            ctx.lineTo(80,50);
+
+            //pintu masuk samping sebrang ATM
+            ctx.moveTo(80,40);
+            ctx.lineTo(85,40);
+            ctx.lineTo(85,10);
+            ctx.stroke();
+
+            //Gd.Justinus
+            ctx.beginPath();
+            ctx.rect(30,20,50,65);
+            ctx.fillStyle = "#E3F100";
+            ctx.fill();
+            ctx.stroke();
+            //keterangan
+            ctx.beginPath();
+            ctx.fillStyle = "#070803";
+            ctx.font="9px Arial";
+            ctx.fillText("Gd.Justinus",30,65);
+            ctx.stroke();
+
+            //parkir gd.justinus
+
+            //parkir mobil
+            ctx.beginPath();
+            ctx.moveTo(35,95);
+            ctx.lineTo(30,105);
+            ctx.moveTo(80,95);
+            ctx.lineTo(75,105);
+            ctx.font="9px Arial";
+            ctx.fillText("Parkir Mobil",35,100);
+            ctx.stroke();
+            
+            //parkir Motor
+            ctx.beginPath();
+            ctx.moveTo(20,125);
+            ctx.lineTo(95,125);
+            ctx.font="8px Arial";
+            ctx.fillText("Parkir Motor",35,133);
+            ctx.stroke();
+
+            //garis luar bagian dalam
+            ctx.moveTo(5,135);
+            ctx.lineTo(100,135);
+            ctx.lineTo(106,141);
+            ctx.lineTo(360,141);
+            ctx.lineTo(370,130);
+            ctx.lineTo(470,130);
+            ctx.lineTo(480,135);
+            ctx.lineTo(650,135);
+            //pos satpam dekat taman hc
+            ctx.lineTo(650,128);
+            ctx.lineTo(670,128);
+            ctx.lineTo(670,135);
+            ctx.lineTo(1000,138);
+            ctx.lineTo(1190,138);
+            ctx.lineTo(1190,10);
+            ctx.stroke();
+
+            //gedung atm dan Gd.labertus
+            //atm dan satpam
+            ctx.beginPath();
+            ctx.moveTo(105,10);
+            ctx.lineTo(105,13);
+            
+            //garis tangga belakang pos satpam
+            ctx.moveTo(125,25);
+            ctx.lineTo(152,25);
+            ctx.moveTo(168,25);
+            ctx.lineTo(200,25);
+            
+            //garis sekitar belakang gedung labertus bawah atm
+            ctx.moveTo(110,55);
+            ctx.lineTo(108,85);
+            ctx.lineTo(120,85);
+            ctx.lineTo(120,33);
+            ctx.lineTo(150,33);
+            ctx.lineTo(152,25);
+            ctx.moveTo(170,33);
+            ctx.lineTo(200,33);
+            ctx.lineTo(200,25);
+            ctx.moveTo(170,33);
+            ctx.lineTo(168,25);
+            ctx.stroke();
+
+            //properti payung di sekitar pos satpam
+            ctx.beginPath();
+            ctx.arc(170,18,3,0,2*Math.PI);
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.arc(190,18,3,0,2*Math.PI);
+            ctx.stroke();
+
+
+            //pos satpam
+            ctx.strokeRect(110,15,15,15);
+            //atm
+            ctx.strokeRect(110,31,5,25);
+
+            //gd. albertus
+            ctx.beginPath();
+            ctx.rect(130,40,60,40);
+            ctx.rect(190,47,30,25);
+            ctx.fillStyle = "#09F322";
+            ctx.fill();
+            ctx.stroke();
+            //keterangan
+            ctx.beginPath();
+            ctx.font ="9px Arial";
+            ctx.fillStyle="#000000";
+            ctx.fillText("Gd.Albertus",137,60);
+            ctx.stroke();
+
+            //parkir depan Gd.albertus
+            ctx.beginPath();
+            ctx.moveTo(130,85);
+            ctx.lineTo(190,85);
+            ctx.moveTo(110,110);
+            ctx.lineTo(200,110);
+            ctx.lineTo(200,105);
+            ctx.lineTo(260,105);
+            ctx.font ="9px Arial";
+            ctx.fillText("Parkir Motor",160,100);
+            ctx.stroke();
+
+            //parkir mobil albertus
+            ctx.beginPath();
+            ctx.moveTo(110,130);
+            ctx.lineTo(102,139);
+            ctx.moveTo(120,130);
+            ctx.lineTo(110,140);
+            ctx.moveTo(130,130);
+            ctx.lineTo(120,140);
+            ctx.moveTo(140,130);
+            ctx.lineTo(130,140);
+            ctx.moveTo(150,130);
+            ctx.lineTo(140,140);
+            ctx.moveTo(210,130);
+            ctx.lineTo(200,140);
+            ctx.moveTo(220,130);
+            ctx.lineTo(210,140);
+            ctx.moveTo(280,130);
+            ctx.lineTo(280,140);
+            ctx.moveTo(340,130);
+            ctx.lineTo(340,140);
+            ctx.moveTo(350,130);
+            ctx.lineTo(350,140);
+            ctx.moveTo(360,130);
+            ctx.lineTo(360,140);
+            ctx.font ="9px Arial";
+            ctx.fillText("Parkir Mobil",150,139);
+            ctx.font ="9px Arial";
+            ctx.fillText("Parkir Mobil",220,139);
+            ctx.font ="9px Arial";
+            ctx.fillText("Parkir Mobil",290,139);
+            ctx.stroke();
+
+            //Lap.futsal
+            ctx.beginPath();
+            ctx.rect(225,30,37,50);
+            ctx.fillStyle = "#790462";
+            ctx.fill();
+            ctx.stroke();
+
+            //garis sekitar Lap.futsal
+            ctx.beginPath();
+            ctx.moveTo(200,85);
+            ctx.lineTo(230,85);
+            ctx.lineTo(230,80);
+            ctx.moveTo(240,80);
+            ctx.lineTo(240,85);
+            ctx.lineTo(270,85);
+            ctx.lineTo(270,80);
+            ctx.lineTo(260,80);
+            ctx.font ="8px Arial";
+            ctx.fillStyle="#FFFFFF";
+            ctx.fillText("Lap.Basket",225,60);
+            ctx.stroke();
+
+            //Gd.TA
+            ctx.beginPath();
+            ctx.rect(285,25,80,45);
+            ctx.rect(265,30,20,20);
+            ctx.rect(365,30,25,20);
+            ctx.fillStyle = "#6E07CF";
+            ctx.fill();
+            ctx.stroke();
+            //keterangan
+            ctx.beginPath();
+            ctx.font = "8px Arial";
+            ctx.fillStyle="#FFFFFF";
+            ctx.fillText("Gd.TA",310,50);
+            ctx.stroke();
+
+            //parkir Gd.TA
+            ctx.beginPath();
+            ctx.moveTo(285,100);
+            ctx.lineTo(365,100);
+            ctx.moveTo(285,100);
+            ctx.lineTo(285,105);
+            ctx.lineTo(365,110);
+            ctx.lineTo(365,100);
+            ctx.font = "8px Arial";
+            ctx.fillText("Parkir Motor",305,95);
+            ctx.stroke();
+
+            //jembatan depan Gd.ThomasAquinas
+            ctx.beginPath();
+            ctx.moveTo(285,85);
+            ctx.lineTo(310,85);
+            ctx.lineTo(310,80);
+            ctx.lineTo(285,80);
+            ctx.lineTo(285,85);
+            ctx.moveTo(330,80);
+            ctx.lineTo(330,85);
+            ctx.lineTo(365,85);
+            ctx.lineTo(365,80);
+            ctx.lineTo(330,80);
+            //tengah
+            ctx.moveTo(310,80);
+            ctx.lineTo(310,70);
+            ctx.moveTo(330,80);
+            ctx.lineTo(330,70);
+            ctx.moveTo(330,75);
+            ctx.lineTo(355,75);
+            ctx.moveTo(310,75);
+            ctx.lineTo(290,75);
+            ctx.stroke();
+            //Gd,Michael
+            ctx.beginPath();
+            ctx.rect(395,45,70,30);
+            ctx.fillStyle = "#E5061E";
+            ctx.fill();
+            ctx.stroke();
+            //jembatan Gd.Michael
+            ctx.beginPath();
+            ctx.moveTo(390,50);
+            ctx.lineTo(390,90);
+            ctx.lineTo(420,90);
+            ctx.moveTo(420,90);
+            ctx.lineTo(420,75);
+            ctx.moveTo(440,75);
+            ctx.lineTo(440,90);
+            ctx.moveTo(440,90);
+            ctx.lineTo(500,90);
+            ctx.font="12px Arial";
+            ctx.fillStyle="#000000";
+            ctx.fillText("Gd.Michael",400,60);
+            ctx.stroke();
+
+            //Parkir Motor Gd.Michael
+            ctx.beginPath();
+            ctx.moveTo(390,110);
+            ctx.lineTo(420,110);
+            ctx.moveTo(390,110);
+            ctx.lineTo(390,105);
+            ctx.font ="6px Arial";
+            ctx.fillText("Parkir Motor",390,105);
+            ctx.stroke();
+
+            //parkir mobil Gd.Michael
+            ctx.beginPath();
+            ctx.moveTo(450,92);
+            ctx.lineTo(450,105);
+            ctx.moveTo(460,92);
+            ctx.lineTo(460,105);
+            ctx.moveTo(470,92);
+            ctx.lineTo(470,105);
+            ctx.moveTo(480,92);
+            ctx.lineTo(480,105);
+            ctx.font ="9px Arial";
+            ctx.fillText("Parkir Mobil",440,103);
+            ctx.stroke();
+
+            //Gd BMSI
+            ctx.beginPath();
+            ctx.rect(420,20,30,15);
+            ctx.fillStyle = "#F2A707";
+            ctx.fill();
+            ctx.stroke();
+            //keterangan
+            ctx.beginPath();
+            ctx.moveTo(390,10);
+            ctx.lineTo(390,30);
+            ctx.moveTo(390,37);
+            ctx.lineTo(430,37);
+            ctx.moveTo(450,37);
+            ctx.lineTo(480,37);
+            ctx.font ="7px Arial";
+            ctx.fillStyle="#000000";
+            ctx.fillText("G.BMSI",420,30);
+            ctx.stroke();
+
+            //Gd.Antonius
+            ctx.beginPath();
+            ctx.rect(520,40,40,20);
+            ctx.rect(560,40,30,40);
+            ctx.rect(590,60,50,20);
+            ctx.rect(480,40,30,35);
+            ctx.fillStyle = "#FC999C";
+            ctx.fill();
+            ctx.stroke();
+            //keterangan
+            ctx.beginPath();
+            ctx.font ="9px Arial";
+            ctx.fillStyle="#000000";
+            ctx.fillText("Gd.Antonius",545,70);
+            ctx.stroke();
+            
+            //parkir Gd.Antonius
+            ctx.beginPath();
+            ctx.moveTo(500,90);
+            ctx.lineTo(500,95);
+            ctx.lineTo(525,95);
+            ctx.moveTo(540,95);
+            ctx.lineTo(560,95);
+            ctx.lineTo(560,79);
+            ctx.moveTo(575,79);
+            ctx.lineTo(575,95);
+            ctx.lineTo(635,95);
+            ctx.lineTo(635,105);
+            ctx.lineTo(650,105);
+            ctx.lineTo(650,60);
+            ctx.lineTo(600,35);
+            ctx.lineTo(480,35);
+            ctx.font ="9px Arial";
+            ctx.fillText("Parkir Mobil",500,130);
+            ctx.fillText("Parkir Mobil",600,130);
+            ctx.fillText("Parkir Motor",520,106);
+            ctx.fillText("Parkir Motor",580,106);
+
+            //gerbang luar
+            ctx.lineTo(440,10);
+            ctx.lineTo(412,10);
+            ctx.lineTo(260,10);
+            ctx.lineTo(260,25);
+            ctx.lineTo(245,25);
+            ctx.lineTo(245,12);
+            ctx.lineTo(240,12);
+            ctx.lineTo(240,25);
+            ctx.lineTo(225,25);
+            ctx.lineTo(225,10);
+            ctx.stroke();
+            
+            //Gd.HC
+            ctx.beginPath();
+            ctx.rect(720,40,40,60);
+            ctx.rect(760,65,60,20);
+            ctx.rect(800,85,20,10);
+            ctx.fillStyle = "#09A2FF";
+            ctx.fill();
+            ctx.stroke();
+            //keterangan
+            ctx.beginPath();
+            ctx.font = "9px Arial";
+            ctx.fillStyle="#000000";
+            ctx.fillText("Gd.Henricus Constatan",720,75);
+            ctx.stroke();
+
+            //parkir ke Gd.Henricus Constatan
+            ctx.beginPath();
+            ctx.moveTo(464,10);
+            ctx.lineTo(485,23);
+            ctx.lineTo(500,23);
+            ctx.lineTo(520,18);
+            ctx.lineTo(600,18);
+            ctx.lineTo(630,28);
+            //
+            ctx.moveTo(520,23);
+            ctx.lineTo(600,23);
+            ctx.lineTo(610,27);
+            ctx.moveTo(625,33);
+            ctx.lineTo(670,55);
+            ctx.moveTo(670,60);
+            ctx.lineTo(700,60);
+            ctx.lineTo(700,34);
+            ctx.lineTo(610,27);
+            ctx.font = "9px Arial";
+            ctx.fillText("Parkir Motor",650,45);
+            ctx.fillText("Parkir Motor",715,113);
+            ctx.stroke();
+
+            //jembatanhc
+            ctx.beginPath();
+            ctx.moveTo(700,60);
+            ctx.lineTo(720,60);
+            ctx.moveTo(700,75);
+            ctx.lineTo(720,75);
+            ctx.stroke();
+
+            //parkirkirihc
+            ctx.beginPath();
+            ctx.moveTo(670,75);
+            ctx.lineTo(700,75);
+            ctx.lineTo(700,110);
+            ctx.lineTo(680,110);
+            ctx.moveTo(670,75);
+            ctx.lineTo(670,115);
+            ctx.moveTo(700,110);
+            ctx.lineTo(700,115);
+            ctx.lineTo(920,115);
+            ctx.fillText("P.Motor",670,95);
+            ctx.fillText("Parkir Mobil",690,133);
+            ctx.fillText("Parkir Mobil",800,133);
+            ctx.fillText("Parkir Mobil",830,113);
+            ctx.fillText("Parkir Mobil",900,135);
+            ctx.fillText("Parkir Mobil",1000,136);
+            ctx.stroke();
+
+            //pos dan parkir dekat sporthall
+            ctx.beginPath();
+            ctx.moveTo(820,89);
+            ctx.lineTo(900,89);
+            ctx.lineTo(950,113);
+            //garis pagar dari hc ke sporthall
+            ctx.lineTo(1000,113);
+            ctx.lineTo(1015,100);
+            ctx.lineTo(1018,90);
+            ctx.lineTo(1015,80);
+            ctx.lineTo(895,80);
+            ctx.stroke();
+
+            //pager dari sporthall ke hc
+            ctx.beginPath();
+            ctx.moveTo(820,28);
+            ctx.lineTo(820,60);
+            ctx.lineTo(765,60);
+            ctx.lineTo(765,35);
+            ctx.lineTo(700,35);
+            ctx.stroke();
+
+            //pager sporthall ke postsatpam akhir
+            ctx.beginPath();
+            ctx.moveTo(820,28);
+            ctx.lineTo(770,25);
+            ctx.lineTo(750,20);
+            ctx.lineTo(740,10);
+            ctx.lineTo(465,10);
+            ctx.stroke();
+
+            //Gd.SportHall
+            ctx.beginPath();
+            ctx.rect(830,28,65,55);
+            ctx.fillStyle = "#09E827";
+            ctx.fill();
+            ctx.stroke();
+            //keterangan
+            ctx.beginPath();
+            ctx.font = "9px Arial";
+            ctx.fillStyle="#000000";
+            ctx.fillText("Gd.SportHall",840,60);
+            ctx.stroke();
+
+            //kapel
+            ctx.beginPath();
+            ctx.rect(1040,70,50,30);
+            ctx.fillStyle = "#E6970C";
+            ctx.fill();
+            ctx.stroke()
+            //keterangan
+            ctx.beginPath();
+            ctx.font = "12px Arial";
+            ctx.fillStyle="#000000";
+            ctx.fillText("Kapel",1050,90);
+            ctx.stroke();
+
+            //slasar
+            ctx.beginPath();
+            ctx.rect(1040,45,50,20);
+            ctx.fillStyle = "#C80CE6";
+            ctx.fill();
+            ctx.stroke()
+            //keterangan
+            ctx.beginPath();
+            ctx.font = "9px Arial";
+            ctx.fillStyle="#000000";
+            ctx.fillText("SLASAR",1050,55);
+            ctx.stroke();
+
+            //lab teknik
+            ctx.beginPath();
+            ctx.rect(1095,50,30,50);
+            ctx.fillStyle = "#6C0CE6";
+            ctx.fill();
+            ctx.stroke()
+            //keterangan
+            ctx.beginPath();
+            ctx.font = "9px Arial";
+            ctx.fillStyle="#000000";
+            ctx.fillText("Lab",1100,80);
+            ctx.stroke()
+            //dari kapel ke postsatpam akhir
+            ctx.beginPath();
+            ctx.moveTo(1040,50);
+            ctx.lineTo(1020,50);
+            ctx.lineTo(1020,65);
+            ctx.lineTo(910,66);
+            ctx.lineTo(910,16);
+            ctx.lineTo(820,16);
+            ctx.lineTo(800,14);
+            ctx.lineTo(770,12);
+            ctx.lineTo(770,10);
+            ctx.lineTo(1200,10);
+            ctx.moveTo(1090,50);
+            ctx.lineTo(1150,50);
+            ctx.lineTo(1150,139);
+            ctx.stroke();
+
+            //lapangan tennis
+            ctx.beginPath();
+            ctx.rect(1050,115,50,20);
+            ctx.fillStyle = "#1AAD29";
+            ctx.fill();
+            ctx.stroke()
+            //keterangan
+            ctx.beginPath();
+            ctx.font = "9px Arial";
+            ctx.fillStyle="#000000";
+            ctx.fillText("Lap.Tennis",1052,130);
+            ctx.stroke()
+
+            //alurjalan
+            ctx.font = "9px Arial";
+            ctx.fillText("<-Jalur Keluar",930,76);
+            ctx.fillText("<-Jalur Keluar",800,25);
+
+
+           
+        </script>
+            
+    <footer>
+    <div class="footer"> ProjectAkhir &copy;Dionisius Agung Putrantio IKOM 14.k1.0059</div> 
+    </footer>
+</html>
